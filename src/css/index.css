@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-small xs:text-base
+}
+
+header {
+  @apply sticky px-4 md:px-6 top-0 bg-dark-gray z-10
+}
+
+
+button {
+  @apply border py-3 px-5 rounded-lg border-vivid-orange;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-heading
+}
+
+h2,
+h3 {
+  @apply text-2xl 
+}
+
+h1 {
+  @apply text-medium xs:text-5xl xl:text-max 
+}
+
+h2 {
+  @apply text-vivid-orange xs:text-3xl md:text-4xl lg:text-5xl
+}
+
+h3 {
+  @apply text-light-gray md:text-3xl lg:text-4xl
+}
+
+p,
+ul {
+  @apply text-light-gray font-body max-w-screen-xxs xs:max-w-sm 
+}
+
+p {
+  @apply mb-10 xs:mb-10 
+}
+
+/* Classes */
+
+.nav-link {
+  @apply font-body py-3 text-light-gray opacity-100 transition-colors duration-300
+}
+
+.button-link {
+  @apply font-body text-vivid-orange
+}
+
+.near-trunk {
+  @apply ml-6 
+}
+
+.circle {
+  @apply flex gap-4 -ml-8
+}
+
+.box {
+  @apply border rounded-lg border-dark-gray-light
+}
+
+.inner-box {
+  @apply relative h-full w-full
+}
+
+.trunk {
+  @apply after:absolute after:z-10 after:top-0 after:bottom-0 after:right-0 after:w-px after:bg-dark-gray-light
+}
+
+.ghost-underline {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-black after:transition-width after:duration-300 hover:after:w-full hover:after:bg-gray-500;
+}
+
+.cover {
+  @apply absolute top-full mt-2 md:mt-6 left-2/3 h-[70%] w-[300px] md:h-[241px] md:w-[598px]
+}
+
