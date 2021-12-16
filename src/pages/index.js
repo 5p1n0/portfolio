@@ -70,7 +70,7 @@ const IndexPage = () => {
           </Link>
         </button>
 
-        <div id="experiences-anchor" className="invisible"></div>
+        <div id="experiences" className="invisible"></div>
       </section>
 
       <div className="col-start-1 relative trunk"></div>
@@ -96,7 +96,7 @@ const IndexPage = () => {
           <div className="inner-box box top-[10%] left-[6%] md:top-[8%] md:left-[4%]"></div>
         </div>
 
-        <div id="projects-anchor" className="invisible"></div>
+        <div id="projects" className="invisible"></div>
 
       </section>
 
@@ -133,7 +133,7 @@ const IndexPage = () => {
 
             <div className="block near-trunk box bg-dark-gray-light h-28 max-w-[80%] xs:h-36 xs:max-w-[70%] md:h-56 md:max-w-[80%]"></div>
             
-            <div id="about-anchor" className="invisible"></div>
+            <div id="about" className="invisible"></div>
 
           </div>
 
@@ -189,7 +189,7 @@ const IndexPage = () => {
           </Link>
         </button>
 
-        <div id="contact-anchor" className="invisible"></div>
+        <div id="contact" className="invisible"></div>
 
       </section>
 

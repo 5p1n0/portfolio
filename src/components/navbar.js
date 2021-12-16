@@ -36,7 +36,7 @@ const Navbar = () => {
             <li key={4} className="inline ml-2 px-4">
               <Link
                 className="nav-link ghost-underline "
-                to="#experiences-anchor"
+                to="#experiences"
               >
                 Experiences
               </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li key={3} className="inline ml-2 px-4">
               <Link
                 className="nav-link ghost-underline "
-                to="#projects-anchor"
+                to="#projects"
               >
                 Projects
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li key={2} className="inline ml-2 px-4">
               <Link
                 className="nav-link ghost-underline "
-                to="#about-anchor"
+                to="#about"
               >
                 About
               </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li key={1} className="inline ml-2 px-4">
               <Link
                 className="nav-link ghost-underline "
-                to="#contact-anchor"
+                to="#contact"
               >
                 Contact
               </Link>
