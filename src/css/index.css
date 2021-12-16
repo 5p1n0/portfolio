@@ -52,7 +52,7 @@ p {
 /* Classes */
 
 .nav-link {
-  @apply font-body py-3 text-light-gray opacity-100 transition-colors duration-300
+  @apply font-body px-1 pb-2 text-light-gray hover:text-vivid-orange opacity-100 transition-colors duration-200
 }
 
 .button-link {
@@ -80,7 +80,7 @@ p {
 }
 
 .ghost-underline {
-  @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-black after:transition-width after:duration-300 hover:after:w-full hover:after:bg-gray-500;
+  @apply relative after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-0.5 after:transition-all after:duration-200 after:ease-in-out hover:after:w-full hover:after:left-0 hover:after:bg-vivid-orange;
 }
 
 .cover {

@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         
         <Link 
-          className={`nav-link ghost-underline after:ease`}
+          className={`nav-link ghost-underline `}
           to="/"
         >
           Lorem Ipsum
@@ -31,39 +31,39 @@ const Navbar = () => {
 
         <div> 
            
-          <ul className="hidden md:inline">
+          <ul className="hidden lg:inline">
             
-            <li key={4} className="inline ml-2 py-3 px-5">
+            <li key={4} className="inline ml-2 px-4">
               <Link
-                className="nav-link ghost-underline after:ease"
+                className="nav-link ghost-underline "
                 to="#experiences-anchor"
               >
                 Experiences
               </Link>
             </li>
             
-            <li key={3} className="inline ml-2 py-3 px-5">
+            <li key={3} className="inline ml-2 px-4">
               <Link
-                className="nav-link ghost-underline after:ease"
+                className="nav-link ghost-underline "
                 to="#projects-anchor"
               >
                 Projects
               </Link>
             </li>
 
-            <li key={2} className="inline ml-2 py-3 px-5">
+            <li key={2} className="inline ml-2 px-4">
               <Link
-                className="nav-link ghost-underline after:ease"
+                className="nav-link ghost-underline "
                 to="#about-anchor"
               >
                 About
               </Link>
             </li>
 
-            <li key={1} className="inline ml-2 py-3 px-5">
+            <li key={1} className="inline ml-2 px-4">
               <Link
-                className="nav-link ghost-underline after:ease"
-                to="/"
+                className="nav-link ghost-underline "
+                to="#contact-anchor"
               >
                 Contact
               </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
 
           </ul>
 
-          <button className="ml-3 py-2 px-5">
+          <button className="ml-3 px-5">
             <Link
               className="button-link"
               to="/"
