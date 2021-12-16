@@ -29,29 +29,38 @@ const Navbar = () => {
           Lorem Ipsum
         </Link>
 
-        <div className="flex items-center"> 
+        <div> 
            
-          <ul className="hidden md:flex">
+          <ul className="hidden md:inline">
             
-            <li key={1} className="ml-2 py-3 px-5">
+            <li key={4} className="inline ml-2 py-3 px-5">
               <Link
                 className="nav-link ghost-underline after:ease"
-                to="/"
+                to="#experiences-anchor"
               >
                 Experiences
               </Link>
             </li>
             
-            <li key={2} className="ml-2 py-3 px-5">
+            <li key={3} className="inline ml-2 py-3 px-5">
               <Link
                 className="nav-link ghost-underline after:ease"
-                to="/"
+                to="#projects-anchor"
+              >
+                Projects
+              </Link>
+            </li>
+
+            <li key={2} className="inline ml-2 py-3 px-5">
+              <Link
+                className="nav-link ghost-underline after:ease"
+                to="#about-anchor"
               >
                 About
               </Link>
             </li>
 
-            <li key={3} className="ml-2 py-3 px-5">
+            <li key={1} className="inline ml-2 py-3 px-5">
               <Link
                 className="nav-link ghost-underline after:ease"
                 to="/"
