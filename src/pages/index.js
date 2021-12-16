@@ -189,6 +189,8 @@ const IndexPage = () => {
           </Link>
         </button>
 
+        <div id="contact-anchor" className="invisible"></div>
+
       </section>
 
       <section className="col-span-full mx-4 before:absolute before:z-10 before:h-px before:w-11/12 before:bg-dark-gray-light">
