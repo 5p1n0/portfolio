@@ -10,7 +10,7 @@ const Layout = ({children}) => {
       <Headroom>
         <Navbar />
       </Headroom>  
-      <main className="grid grid-cols-[16px_1fr] sm:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]">{children}</main>
+      <main className="grid grid-cols-[16px_1fr] md:md:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]">{children}</main>
       <Footer />
     </div>
   )
