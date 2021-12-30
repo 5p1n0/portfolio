@@ -43,5 +43,35 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: "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",
+        graphQLQuery: `
+          query {
+            user(login: "5p1n0") {
+              id
+              repositories(first: 10, privacy: PUBLIC) {
+                edges {
+                  node {
+                    name
+                    description
+                    forkCount
+                    stargazers {
+                      totalCount
+                    }
+                    url
+                    primaryLanguage {
+                      color
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `
+      },
+    }
   ],
 };
