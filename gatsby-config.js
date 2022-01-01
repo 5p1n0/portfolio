@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: "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",
+        token: "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",
         graphQLQuery: `
           query {
             user(login: "5p1n0") {
