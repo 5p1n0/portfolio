@@ -24,10 +24,10 @@ module.exports = {
       },
       colors: {
         'dark-gray': {
-          darkest: '#464646',
-          dark: '#1d1d1d',
+          darkest: '#1d1d1d',
+          dark: '#434343',
           DEFAULT: '#2a2a2a',
-          light: '#434343',
+          light: '#464646',
         },
         'light-gray': '#efefef',
         'vivid-orange': '#ee8219',
