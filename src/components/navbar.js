@@ -58,7 +58,6 @@ const Navbar = () => {
 
           <button className="ml-3 px-5">
             <Link
-              className="button-link"
               to="/"
             >
               Resume
