@@ -1,148 +1,77 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import * as React from 'react'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const Projects = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      featured: allMarkdownRemark(
-        filter: {
-          fileAbsolutePath: { regex: "/featured/" }
-          frontmatter: { showInProjects: { ne: false } }
-        }
-        sort: { fields: [frontmatter___order], order: ASC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              cover {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 700
-                    height: 390
-                    tracedSVGOptions: {color: "#64ffda"}
-                    placeholder: TRACED_SVG
-                  )
-                }
-              }
-              title
-              tech
-              github
-              external
-              color
-            }
-            html
-          }
-        }
-      }
-    }
-  `)
+const Projects = ({repo}) => {
 
-  const projects = data.featured.edges.filter( ({node}) => node);
+  function openRepoinNewTab(url) {
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
 
   return (
-    <div>
-      {projects && 
-        projects.map( ({node}, i) => {
-          console.log(node);
-          const {frontmatter, html} = node
-          const {cover, title, tech, github, external, color} = frontmatter
-          const image = getImage(cover)
-          return (
-            <div className={`bg-${color} mb-12 relative overflow-hidden rounded transform transition duration-150 ease-in-out hover:scale-105 shadow-inner`}>
-             
-              <div className="md:w-7/12 md:p-24 lg:w-6/12 p-10">
+    <div 
+    className="grid grid-cols-1 grid-rows-[1.6fr_0.4fr] box p-3 md:p-4 bg-dark-gray-dark cursor-pointer transform transition duration-200 ease-in-out hover:scale-105 hover:bg-dark-gray-light w-72 md:w-96 h-36 md:h-40"
+      onClick={() => openRepoinNewTab(repo.url)}  
+    >
 
-                <h3 className="text-xl md:text-3xl">
-                  {title}
-                </h3>
+      <div className="row-start-1">
+        <svg
+          className="stroke-light-gray fill-light-gray min-w-[16px] self-end stroke-0 shrink-0 mb-1.5 md:mb-2"
+          width="12" 
+          height="16" 
+          aria-hidden="true" 
+          role="img" 
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 12 16" 
+        >
+          <path d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z" fillRule="evenodd" />
+        </svg>
 
-                <div
-                  dangerouslySetInnerHTML={{__html: html}}
-                  className="text-gray-500 my-4"
-                >
-                </div>
+        <p className="mb-1 font-heading">{repo.name}</p>
 
-                {tech && (
-                  <ul className="flex mb-4 text-gray-500 text-sm">
-                    {
-                      tech.map( (tech, i) => (
-                        <li key={i} className="mr-4">
-                          {tech}
-                        </li>
-                        )
-                      )
-                    }
-                  </ul>
-                )}
+        <p className="mb-1 text-sm">{repo.description}</p>
+      </div>
+      
+      <div className="row-start-2 self-end">
+        <div className="flex justify-between">
 
-                <div className="flex">
-                  {github && (
-                    <a
-                      href={github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mr-4"
-                    >
+          <div
+            className="w-[10px] h-[10px] rounded-full self-center"
+            style={{ backgroundColor: repo.primaryLanguage.color }}
+          />
 
-                      <svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+          <p className="ml-2 mb-0 mr-auto text-sm">{repo.primaryLanguage.name}</p>
 
-                        <path
-                          d="M18.658 5.225a9.956 9.956 0 00-3.639-3.64C13.487.693 11.814.246 10 .246c-1.813 0-3.487.447-5.019 1.34a9.955 9.955 0 00-3.639 3.64C.447 6.757 0 8.43 0 10.245c0 2.178.636 4.138 1.908 5.878 1.271 1.74 2.914 2.945 4.928 3.613.234.044.408.013.52-.09a.51.51 0 00.17-.391l-.007-.703c-.004-.443-.006-.83-.006-1.16l-.3.053c-.19.035-.432.05-.723.045a5.504 5.504 0 01-.904-.09 2.021 2.021 0 01-.873-.391 1.652 1.652 0 01-.573-.8l-.13-.3a3.25 3.25 0 00-.41-.664c-.187-.244-.375-.408-.566-.495l-.091-.065a.957.957 0 01-.17-.157.715.715 0 01-.117-.182c-.026-.061-.004-.11.065-.15.07-.04.195-.058.378-.058l.26.039c.174.034.389.138.645.312s.466.4.631.677c.2.356.44.627.723.814.282.186.566.28.853.28.286 0 .533-.022.742-.065a2.59 2.59 0 00.586-.196c.078-.582.29-1.028.638-1.34a8.92 8.92 0 01-1.335-.235 5.311 5.311 0 01-1.224-.508 3.505 3.505 0 01-1.048-.873c-.278-.347-.506-.803-.684-1.367-.177-.564-.266-1.215-.266-1.953 0-1.05.343-1.944 1.028-2.682-.321-.79-.29-1.675.091-2.656.252-.078.625-.02 1.12.176.495.195.857.362 1.087.5.23.14.415.257.554.352a9.245 9.245 0 012.5-.338c.859 0 1.693.113 2.5.338l.495-.312a7.01 7.01 0 011.197-.573c.46-.173.812-.221 1.055-.143.39.98.426 1.866.104 2.656.686.738 1.03 1.632 1.03 2.682 0 .738-.09 1.391-.268 1.96-.178.569-.407 1.024-.69 1.367a3.642 3.642 0 01-1.054.866c-.421.234-.83.403-1.224.508-.396.104-.84.182-1.335.234.451.39.677 1.007.677 1.85v2.746c0 .156.054.287.163.39.108.105.28.135.514.092 2.014-.669 3.657-1.873 4.928-3.613 1.272-1.74 1.908-3.7 1.908-5.88 0-1.813-.448-3.486-1.342-5.018z"
-                          fill="#47535E"
-                        />                        
-                      </svg>
-                    </a>
-                  )}
+          <svg
+            className="stroke-light-gray fill-light-gray stroke-0 ml-4 min-w-[16px]"
+            width="12" 
+            height="20" 
+            aria-hidden="true" 
+            role="img" 
+            viewBox="0 0 10 16" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m8 1a1.993 1.993 0 0 0-1 3.72v1.28l-2 2-2-2v-1.28a1.993 1.993 0 0 0-1-3.72 1.993 1.993 0 0 0-1 3.72v1.78l3 3v1.78a1.993 1.993 0 0 0 1 3.72 1.993 1.993 0 0 0 1-3.72v-1.78l3-3v-1.78a1.993 1.993 0 0 0-1-3.72zm-6 3.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zm3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zm3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z" fillRule="evenodd" />
+          </svg>
 
-                  <a 
-                    href={external} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
+          <p className="ml-1 mb-0 text-sm">{repo.forkCount} </p>
 
-                    <svg
-                      width="20"
-                      height="20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+          <svg
+            className="stroke-light-gray fill-light-gray stroke-0 ml-4 min-w-[16px]"
+            width="14" 
+            height="20" 
+            aria-hidden="true" 
+            role="img" 
+            viewBox="0 0 14 16" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z" fillRule="evenodd" />
+          </svg>
 
-                      <g 
-                        clipPath="url(#clip0)" 
-                        fill="#47535E"
-                      >
+          <p className="ml-1 mb-0 text-sm">{repo.stargazers.totalCount}</p>     
+        
+        </div>
+      </div>
 
-                        <path d="M19.076.222H13.22a.924.924 0 100 1.848h3.625l-8.86 8.86a.924.924 0 001.307 1.306l8.86-8.86v3.626a.924.924 0 101.848 0V1.146a.925.925 0 00-.924-.924z" />
-                        <path d="M15.296 7.925a.924.924 0 00-.924.924v9.081H1.848V5.406h9.627a.924.924 0 100-1.848H.924A.924.924 0 000 4.482v14.372a.924.924 0 00.924.924h14.372a.924.924 0 00.924-.924V8.85a.924.924 0 00-.924-.924z" />
-                      </g>
-
-                      <defs>
-                        <clipPath id="clip0">
-                          <path fill="#fff" d="M0 0h20v20H0z" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-
-              <div className="hidden md:block absolute bottom-0 right-0 md:w-8/12 lg:w-7/12 sm:-mb-16 md:-mr-40 lg:-mb-16 lg:-mr-20">
-                <GatsbyImage
-                  image={image}
-                  alt={title}
-                  className="border-none"
-                />
-              </div>
-            </div>
-          )
-        })
-      }
     </div>
   )
 }
