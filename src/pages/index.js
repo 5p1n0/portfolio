@@ -1,11 +1,45 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Circle } from 'react-feather'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
 import Seo from '../components/seo'
 
+
+
+
 const IndexPage = () => {
+
+  const data = useStaticQuery(graphql`
+    query GitHub{
+      githubData {
+        data {
+          user {
+            id
+            repositories {
+              edges {
+                node {
+                  description
+                  name
+                  forkCount
+                  primaryLanguage {
+                    color
+                    name
+                  }
+                  stargazers {
+                    totalCount
+                  }
+                  url
+                }
+              }
+            }
+          }
+        }
+      }  
+    }
+  `);
+
+
   return (
     <Layout>
 
@@ -19,7 +53,7 @@ const IndexPage = () => {
 
         <div className="circle">
 
-          <Circle 
+          <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
             size="1rem"
@@ -27,14 +61,14 @@ const IndexPage = () => {
 
           <h1 className="text-vivid-orange">
             Hi,
-          </h1> 
+          </h1>
 
-        </div> 
+        </div>
 
         <h1 className="text-light-gray mb-5 xs:mb-10 md:mb-14">
-            I'm Luca,<br/> a web developer.
-        </h1> 
-        
+          I'm Luca,<br /> a web developer.
+        </h1>
+
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg lg:max-w-2xl">
@@ -60,10 +94,9 @@ const IndexPage = () => {
 
         </div>
 
-        
+
         <button className="xs:px-6 xs:py-4">
           <Link
-            className="button-link"
             to="/"
           >
             Contact Me
@@ -79,7 +112,7 @@ const IndexPage = () => {
 
         <div className="circle mb-5 xs:mb-10 md:mb-14">
 
-          <Circle 
+          <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
             size="1rem"
@@ -89,8 +122,8 @@ const IndexPage = () => {
             My experiences
           </h2>
 
-        </div> 
-        
+        </div>
+
 
         <div className="box bg-dark-gray-light max-w-[90%] h-40 xs:h-52 md:h-64 lg:h-72">
           <div className="inner-box box top-[10%] left-[6%] md:top-[8%] md:left-[4%]"></div>
@@ -104,35 +137,33 @@ const IndexPage = () => {
 
       <section className="col-start-2 text-left mb-[7%]">
         <div className="flex items-center">
-          
-          <svg 
-            className="flex w-[12%] md:w-[81.429] stroke-current text-dark-gray-light bg-50"
+
+          <svg
+            className="hidden xs:block w-[12%] stroke-dark-gray-light"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 81.429 637.26"
           >
-            <path 
-              d="m479.98 1474.4c0 59.084 80.429 72.729 80.429 137.88v341.52c0 68.815-80.429 75.217-80.429 157.86" 
+            <path
+              d="m479.98 1474.4c0 59.084 80.429 72.729 80.429 137.88v341.52c0 68.815-80.429 75.217-80.429 157.86"
               fill="none"
               transform="translate(-479.48 -1474.4)"
             ></path>
-          </svg>         
+          </svg>
 
-          <div className="grow shrink">
-            
-            <div className="flex gap-2 -ml-2 md:gap-4 md:-ml-2 mb-5 xs:mb-10 md:mb-14">
-              
-              <Circle 
-                className="self-center bg-dark-gray relative z-10"
-                color="#464646"
-                size="1rem"
-              />
+          <div className="near-trunk">
 
-              <h3>Other projects</h3>
+            <h3 className="mb-5 xs:mb-10 md:mb-14">Other projects</h3>
 
+            <div className="flex flex-col gap-12">
+              {
+                data.githubData.data.user.repositories.edges.map(
+                  (repo, i) => {
+                    return <Projects key={i} repo={repo.node} />
+                  }
+                )
+              }
             </div>
 
-            <div className="block near-trunk box bg-dark-gray-light h-28 max-w-[80%] xs:h-36 xs:max-w-[70%] md:h-56 md:max-w-[80%]"></div>
-            
             <div id="about" className="invisible"></div>
 
           </div>
@@ -146,7 +177,7 @@ const IndexPage = () => {
 
         <div className="circle mb-5 xs:mb-10 md:mb-14">
 
-          <Circle 
+          <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
             size="1rem"
@@ -156,22 +187,22 @@ const IndexPage = () => {
             About me
           </h2>
 
-        </div> 
+        </div>
 
         <div className="float-right box bg-dark-gray-light hidden mr-4 xl:mr-6 xl:ml-6 xl:block xl:h-40 xl:w-40 2xl:h-72 2xl:w-72">
           <div className="inner-box box top-[8%] left-[8%]"></div>
-        </div>        
+        </div>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-md">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare libero, quis facilisis risus. Vestibulum ac arcu ligula. In vel lacinia mi. Donec molestie vitae ligula ut sodales.
         </p>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-md">
-          Vestibulum ac arcu ligula.<br/> In vel lacinia mi:
+          Vestibulum ac arcu ligula.<br /> In vel lacinia mi:
         </p>
 
         <ul className="list-disc list-outside marker:text-lg ml-4 md:ml-3 mb-10 xs:mb-14 md:mb-10 md:max-w-xs lg:max-w-sm">
-          
+
           <li className="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
 
           <li className="mb-6">Integer nec ornare libero, quis facilisis risus.</li>
@@ -181,8 +212,7 @@ const IndexPage = () => {
         </ul>
 
         <button className="xs:px-6 xs:py-4">
-          <Link 
-            className="button-link"
+          <Link
             to="/"
           >
             Contact Me
@@ -204,7 +234,6 @@ const IndexPage = () => {
 
           <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
             <Link
-              className="button-link"
               to="/"
             >
               Let's Talk
