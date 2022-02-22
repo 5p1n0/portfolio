@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   // to enhance, check (gatsby-starter-elemental github)
   siteMetadata: {
@@ -46,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: "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",
+        token: process.env.TOKEN,
         graphQLQuery: `
           query {
             user(login: "5p1n0") {
