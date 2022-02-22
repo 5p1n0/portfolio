@@ -59,10 +59,6 @@ p {
   @apply text-vivid-orange transition-colors duration-200 ease-in-out hover:text-dark-gray
 }
 
-.near-trunk {
-  @apply ml-6 
-}
-
 .circle {
   @apply flex gap-4 -ml-8
 }
@@ -75,8 +71,10 @@ p {
   @apply relative h-full w-full
 }
 
-.trunk {
-  @apply after:absolute after:z-10 after:top-0 after:bottom-0 after:right-0 after:w-px after:bg-dark-gray-light
+@layer components{
+  .trunk {
+    @apply after:absolute after:z-10 after:top-0 after:bottom-0 after:right-0 after:w-px after:bg-dark-gray-light
+  }
 }
 
 .ghost-underline {
@@ -87,3 +85,6 @@ p {
   @apply absolute top-full mt-2 md:mt-6 left-2/3 h-[70%] w-[300px] md:h-[241px] md:w-[598px]
 }
 
+.svg-end {
+  transform:scaleX(-1);
+}

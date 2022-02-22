@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { Circle } from 'react-feather'
+import { Circle, GitHub } from 'react-feather'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
 import Seo from '../components/seo'
@@ -49,7 +49,7 @@ const IndexPage = () => {
 
       <div className="col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left near-trunk mb-[22%]">
+      <section className="col-start-2 text-left ml-6 mb-[22%]">
 
         <div className="circle">
 
@@ -108,7 +108,7 @@ const IndexPage = () => {
 
       <div className="col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left near-trunk mb-[10%]">
+      <section className="col-start-2 text-left ml-6 mb-[22%] xs:mb-[12%]">
 
         <div className="circle mb-5 xs:mb-10 md:mb-14">
 
@@ -135,45 +135,69 @@ const IndexPage = () => {
 
       <div className="col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left mb-[7%]">
-        <div className="flex items-center">
+      <section className="col-start-2 text-left mb-[22%] xs:mb-[10%]">
 
-          <svg
-            className="hidden xs:block w-[12%] stroke-dark-gray-light"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 81.429 637.26"
+        <svg
+          className="hidden xs:block w-[12%] stroke-dark-gray-light mb-4"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          fill="none"
+          viewBox="0 0 110 142"
+        >
+          <path d="m1-8c0 75 108 75 108 150" stroke-width="1" vector-effect="non-scaling-stroke" />
+        </svg>
+
+        
+        <div className="flex gap-4 -ml-2 mb-5 xs:ml-[10.5%] xs:mb-8">
+
+          <svg 
+            className="fill-dark-gray-light bg-dark-gray self-center relative z-20 h-[24px] w-[20px] md:h-[32px] md:w-[28px]" 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 28 32" 
           >
-            <path
-              d="m479.98 1474.4c0 59.084 80.429 72.729 80.429 137.88v341.52c0 68.815-80.429 75.217-80.429 157.86"
-              fill="none"
-              transform="translate(-479.48 -1474.4)"
-            ></path>
+            <g>
+              <path d="m17.8 24.4h-11c-.6 0-1.1-.5-1.1-1.1v-1.3c0-.8.6-1.4 1.4-1.4h7.2c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-7.3c-.5 0-.9.1-1.4.3v-12.3c0-.6.5-1.1 1.1-1.1h13.6v6.9c0 .5.4.9.9.9s.9-.4.9-.9v-7.8c0-.5-.4-.9-.9-.9h-14.4c-1.6 0-2.9 1.3-2.9 2.9v16.5c0 1.6 1.3 2.9 2.9 2.9h11c.5 0 .9-.4.9-.9s-.5-.9-.9-.9z"></path><path d="m25.4 19.2-3.5-3.8c-.3-.4-.9-.4-1.3 0l-3.5 3.8c-.2.2-.2.4-.2.6s.1.4.3.6.4.3.6.2c.2 0 .4-.1.6-.3l2-2.1v9c0 .5.4.9.9.9s.9-.4.9-.9v-9l2 2.1c.2.2.4.3.6.3s.5-.1.6-.2c.2-.2.3-.4.3-.6-.1-.3-.2-.5-.3-.6z"></path>
+            </g>
           </svg>
 
-          <div className="near-trunk">
-
-            <h3 className="mb-5 xs:mb-10 md:mb-14">Other projects</h3>
-
-            <div className="flex flex-col gap-12">
-              {
-                data.githubData.data.user.repositories.edges.map(
-                  (repo, i) => {
-                    return <Projects key={i} repo={repo.node} />
-                  }
-                )
-              }
-            </div>
-
-            <div id="about" className="invisible"></div>
-
-          </div>
+          <h3>Other projects</h3>
 
         </div>
+
+        <div className="ml-6 xs:mb-4 xs:ml-[12%] flex flex-col gap-12 xs:relative xs:trunk xs:after:left-0">
+          
+          {
+            data.githubData.data.user.repositories.edges.map(
+              (repo, i) => {
+                return <Projects key={i} repo={repo.node} />
+              }
+            )
+          }
+
+        </div>
+
+        <Circle 
+          className="hidden xs:block bg-dark-gray self-center relative z-20 ml-[11%] mb-3"
+          color="#464646"
+          size="1rem"
+        /> 
+
+        <svg
+          className="hidden xs:block w-[12%] stroke-dark-gray-light svg-end"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          fill="none"
+          viewBox="0 0 110 142"
+        >
+          <path d="m1-8c0 75 108 75 108 150" stroke-width="1" vector-effect="non-scaling-stroke" />
+        </svg>
+
+        <div id="about" className="invisible"></div>
       </section>
 
       <div className="col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left near-trunk mb-[10%]">
+      <section className="col-start-2 text-left ml-6 mb-[10%]">
 
         <div className="circle mb-5 xs:mb-10 md:mb-14">
 

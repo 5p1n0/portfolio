@@ -9,7 +9,7 @@ const Projects = ({repo}) => {
 
   return (
     <div 
-    className="grid grid-cols-1 grid-rows-[1.6fr_0.4fr] box p-3 md:p-4 bg-dark-gray-dark cursor-pointer transform transition duration-200 ease-in-out hover:scale-105 hover:bg-dark-gray-light w-72 md:w-96 h-36 md:h-40"
+    className="grid grid-cols-1 grid-rows-[1.6fr_0.4fr] box p-3 md:p-4 bg-dark-gray-dark cursor-pointer transform transition duration-200 ease-in-out hover:scale-105 hover:bg-dark-gray-light w-72 md:w-96 h-36 md:h-40 xs:ml-6"
       onClick={() => openRepoinNewTab(repo.url)}  
     >
 
