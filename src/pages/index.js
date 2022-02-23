@@ -138,7 +138,7 @@ const IndexPage = () => {
       <section className="col-start-2 text-left mb-[22%] xs:mb-[10%]">
 
         <svg
-          className="hidden xs:block w-[12%] stroke-dark-gray-light mb-4"
+          className="hidden xs:block w-[12%] stroke-dark-gray-light mb-6"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           fill="none"
@@ -148,10 +148,10 @@ const IndexPage = () => {
         </svg>
 
         
-        <div className="flex gap-4 -ml-2 mb-5 xs:ml-[10.5%] xs:mb-8">
+        <div className="flex gap-4 -ml-2 mb-5 xs:ml-[11%] xs:mb-8">
 
           <svg 
-            className="fill-dark-gray-light bg-dark-gray self-center relative z-20 h-[24px] w-[20px] md:h-[32px] md:w-[28px]" 
+            className="fill-dark-gray-light bg-dark-gray self-center relative z-20 h-[24px] w-[20px]" 
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 28 32" 
           >
@@ -164,7 +164,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div className="ml-6 xs:mb-4 xs:ml-[12%] flex flex-col gap-12 xs:relative xs:trunk xs:after:left-0">
+        <div className="ml-6 mb-8 xs:ml-[12%] flex flex-col gap-12 xs:relative xs:trunk xs:after:left-0">
           
           {
             data.githubData.data.user.repositories.edges.map(
@@ -176,11 +176,21 @@ const IndexPage = () => {
 
         </div>
 
-        <Circle 
-          className="hidden xs:block bg-dark-gray self-center relative z-20 ml-[11%] mb-3"
-          color="#464646"
-          size="1rem"
-        /> 
+        <div className="flex gap-4 ml-6 xs:ml-[11%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer xs:mb-6">
+
+          <GitHub 
+            className="group-hover:stroke-vivid-orange stroke-light-gray bg-dark-gray self-center relative z-20"
+            size="1rem"
+          />
+
+          <Link
+            className='text-sm group-hover:text-vivid-orange text-light-gray'
+           to="https://github.com/5p1n0" 
+          >
+            Check my GitHub profile!
+          </Link>
+
+        </div>
 
         <svg
           className="hidden xs:block w-[12%] stroke-dark-gray-light svg-end"

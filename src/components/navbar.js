@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         
         <Link 
-          className={`nav-link ghost-underline `}
+          className="nav-link ghost-underline "
           to="/"
         >
           Lorem Ipsum
