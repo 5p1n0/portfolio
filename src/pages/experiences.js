@@ -6,12 +6,13 @@ const ExperiencesPage = () => {
   return (
     <Layout>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="md:mx-6 mb-12 xs:mb-20 col-span-full" />
+      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
 
       <h1 className="col-start-2 mb-6 xs:mb-10 text-light-gray">RoleEver</h1>
 
       <p className="col-start-2 mr-6 md:mr-0 mb-16 md:mb-32 max-w-none">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas. Sed vulputate mi sit amet mauris commodo. Massa placerat duis ultricies lacus sed. Condimentum lacinia quis vel eros donec. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus.
+        RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/>
+        My experiece with RoleEver, started as trainee and later as team member.
       </p>
 
       <div className="flex gap-12 md:gap-20 flex-col sm:flex-row md:ml-20 xl:ml-56 col-start-2 md:col-span-full mb-16 md:mb-28 items-start sm:items-center">
@@ -20,9 +21,10 @@ const ExperiencesPage = () => {
 
         <div>
 
-          <h3 className="mb-5 xs:mb-10 text-vivid-orange">Tortor at auctor</h3>
+          <h3 className="mb-5 xs:mb-10 text-vivid-orange">Early works</h3>
           <p className='mb-0 xs:mb-10 mr-6 md:mr-0 max-w-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Ac tortor dignissim convallis aenean et. Ullamcorper malesuada proin libero nunc consequat interdum varius. Facilisi morbi tempus iaculis urna id.
+            As trainee my job was to develop community related features and my work was spanning between back end/front end tasks.<br/><br/>
+            A core server-side feature that i've developed using Socket.IO and RxJS libs, mainly concerning socket rooms, was the real time status of users within the app.
           </p>
 
         </div>
@@ -35,25 +37,26 @@ const ExperiencesPage = () => {
 
         <div>
 
-          <h3 className="mb-5 xs:mb-10 text-vivid-orange">Dignissim cras tincidunt</h3>
+          <h3 className="mb-5 xs:mb-10 text-vivid-orange">Late works</h3>
           <p className='mb-0 xs:mb-10 md:mr-6 lg:mr-0 max-w-xl'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut. Ut tortor pretium viverra suspendisse potenti nullam. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Eget nunc scelerisque viverra mauris in aliquam sem. Nunc sed id semper risus in hendrerit gravida.
+            After my trainee experiece ended, the team offered me to become a member and develop an ambitious feature related to the in-app shop and user's shared content.<br/><br/>
+            This time my work was to refactor collections of user data within the database and expanding core app services and components, to enable the selection of purchased dice skins within the users shared stories.
           </p>
 
         </div>
 
       </div>
 
-      <h3 className="col-start-2 mb-5 md:mb-10 mr-6 md:mr-0 text-center text-vivid-orange">Diam vulputate ut</h3>
+      <h3 className="col-start-2 mb-5 md:mb-10 mr-6 md:mr-0 text-center text-vivid-orange">Tech Stack</h3>
 
       <p className="col-start-2 max-w-none mb-20 mr-6 md:mr-0 text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. At auctor urna nunc id cursus. Elit eget gravida cum sociis natoque penatibus et magnis. Velit dignissim sodales ut eu sem.
+        The tech stack i've worked with was Angular as main framework, together with Socket.io and RxJS libs, MongoDB as database and Ionic framework, mainly for front end related tasks.
       </p>
 
-      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="md:mx-6 col-span-full mb-12 md:mb-32" />
+      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       
-      <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-28 mr-6 md:mr-0 max-w-none'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est pellentesque elit ullamcorper dignissim cras."</p>
+      <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-28 mr-6 md:mr-0 max-w-none'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
 
     </Layout>
   )
