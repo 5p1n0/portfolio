@@ -19,7 +19,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   @apply font-heading
 }
 
@@ -38,6 +39,10 @@ h2 {
 
 h3 {
   @apply text-light-gray md:text-3xl lg:text-4xl
+}
+
+h4 {
+  @apply text-light-gray text-base sm:text-2xl lg:text-3xl
 }
 
 p,
@@ -82,7 +87,7 @@ p {
 }
 
 .cover {
-  @apply absolute top-full mt-2 md:mt-6 left-2/3 h-[70%] w-[300px] md:h-[241px] md:w-[598px]
+  @apply absolute top-full left-[55%] mt-2 md:mt-20 h-[70%] w-[300px] md:h-[241px] md:w-[598px]
 }
 
 .svg-end {

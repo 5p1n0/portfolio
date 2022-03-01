@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Circle, GitHub, Code } from 'react-feather'
-import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
+import LayoutIndex from '../components/layout_index'
 import Projects from '../components/projects'
 import Seo from '../components/seo'
 
-
+<div className="inner-box box top-[10%] left-[6%] md:top-[8%] md:left-[4%]"></div>
 
 
 const IndexPage = () => {
@@ -41,7 +42,7 @@ const IndexPage = () => {
 
 
   return (
-    <Layout>
+    <LayoutIndex>
 
       <Seo />
 
@@ -49,7 +50,7 @@ const IndexPage = () => {
 
       <div className="col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left ml-6 mb-[22%]">
+      <section className="col-start-2 text-left ml-6 mb-[25%]">
 
         <div className="circle">
 
@@ -66,7 +67,7 @@ const IndexPage = () => {
         </div>
 
         <h1 className="text-light-gray mb-5 xs:mb-10 md:mb-14">
-          I'm Luca,<br /> a web developer.
+          I'm Luca,<br/> a web developer.
         </h1>
 
         <div className="relative overflow-hidden 2xl:overflow-visible">
@@ -76,16 +77,16 @@ const IndexPage = () => {
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
-            <g id="Rettangoli_Copertina" transform="translate(-756 -432)" fill="none" stroke="#464646" data-name="Rettangoli Copertina">
-              <g id="Rectangle_10" transform="translate(756 432)" data-name="Rectangle 10">
+            <g transform="translate(-756 -432)" fill="none" stroke="#464646">
+              <g transform="translate(756 432)">
                 <rect width="544" height="181" rx="8" stroke="none" />
                 <rect x=".5" y=".5" width="543" height="180" rx="7.5" fill="none" />
               </g>
-              <g id="Rectangle_11" transform="translate(783 461)" data-name="Rectangle 11">
+              <g transform="translate(783 461)">
                 <rect width="544" height="181" rx="8" stroke="none" />
                 <rect x=".5" y=".5" width="543" height="180" rx="7.5" fill="none" />
               </g>
-              <g id="Rectangle_12" transform="translate(810 492)" data-name="Rectangle 12">
+              <g transform="translate(810 492)">
                 <rect width="544" height="181" rx="8" stroke="none" />
                 <rect x=".5" y=".5" width="543" height="180" rx="7.5" fill="none" />
               </g>
@@ -124,10 +125,15 @@ const IndexPage = () => {
 
         </div>
 
-
-        <div className="box bg-dark-gray-light max-w-[90%] h-40 xs:h-52 md:h-64 lg:h-72">
-          <div className="inner-box box top-[10%] left-[6%] md:top-[8%] md:left-[4%]"></div>
-        </div>
+        <Link 
+          to="/experiences"
+        >
+          <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
+            <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:opacity-20 group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
+            <h4 className='transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-x-0 top-1/4 md:top-1/3 text-center mb-0 px-2 pt-2 max-w-[18rem] xs:max-w-[34rem] md:max-w-full'>Check about my experience with RoleEver</h4>  
+          </div>
+          
+        </Link>
 
         <div id="projects" className="invisible"></div>
 
@@ -138,7 +144,7 @@ const IndexPage = () => {
       <section className="col-start-2 text-left mb-[22%] xs:mb-[10%]">
 
         <svg
-          className="hidden xs:block w-[12%] stroke-dark-gray-light mb-6"
+          className="hidden sm:block w-[12%] stroke-dark-gray-light mb-6"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           fill="none"
@@ -148,7 +154,7 @@ const IndexPage = () => {
         </svg>
 
         
-        <div className="flex gap-4 -ml-2 mb-5 xs:ml-[11%] xs:mb-8">
+        <div className="flex gap-4 -ml-2 mb-5 sm:ml-[11.2%] sm:mb-8">
 
           <Code 
             className='bg-dark-gray self-center relative z-20'
@@ -160,7 +166,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div className="ml-6 mb-8 xs:ml-[12%] flex flex-col gap-12 xs:relative xs:trunk xs:after:left-0">
+        <div className="ml-6 mb-8 sm:ml-[12%] flex flex-col gap-12 sm:relative sm:trunk sm:after:left-0">
           
           {
             data.githubData.data.user.repositories.edges.map(
@@ -172,7 +178,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div className="flex gap-4 ml-6 xs:ml-[11%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer xs:mb-6">
+        <div className="flex gap-4 ml-6 sm:ml-[11.2%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer sm:mb-6">
 
           <GitHub 
             className="group-hover:stroke-vivid-orange stroke-light-gray bg-dark-gray self-center relative z-20"
@@ -278,7 +284,7 @@ const IndexPage = () => {
       </section>
 
 
-    </Layout>
+    </LayoutIndex>
   )
 }
 
