@@ -10,7 +10,7 @@ const LayoutExp = ({children}) => {
       <Headroom>
         <Navbar />
       </Headroom>  
-      <main className="grid grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.3fr)_minmax(375px,1.4fr)_0.3fr] lg:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]">{children}</main>
+      <main className="grid grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_minmax(16px,0.5fr)]">{children}</main>
       <Footer />
     </div>
   )
