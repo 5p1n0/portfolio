@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { Link } from "gatsby"
 
-const Navbar = () => {
+const NavbarIndex = () => {
   
   return (
     <header className="transition-padding duration-300 ease pt-6 pb-7 md:pt-10 md:pb-9">
       <div className="flex items-center justify-between">
         
         <Link 
-          className="nav-link ghost-underline "
+          className="nav-link ghost-underline"
           to="/"
         >
           Lorem Ipsum
@@ -71,4 +71,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarIndex
