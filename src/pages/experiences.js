@@ -6,7 +6,7 @@ const ExperiencesPage = () => {
   return (
     <LayoutExp>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
+      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
 
       <h1 className="col-start-2 mb-6 md:mb-8 text-light-gray text-left">RoleEver</h1>
 
@@ -17,7 +17,7 @@ const ExperiencesPage = () => {
 
       <div className="flex gap-12 md:gap-20 flex-col sm:flex-row md:ml-20 xl:ml-56 col-start-2 md:col-span-full mb-16 md:mb-28 items-start">
         
-        <StaticImage src="../../content/assets/images/features-1.jpg" alt="Chats interface" layout='constrained' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
+        <StaticImage src="../../content/assets/images/features-1.jpg" alt="User Friendlist" layout='constrained' quality='80' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
 
         <div className='md:mr-6'>
 
@@ -33,7 +33,7 @@ const ExperiencesPage = () => {
 
       <div className="flex gap-12 md:gap-20 flex-col sm:flex-row-reverse col-start-2 md:col-span-full mb-16 md:mr-20 xl:mr-56 md:mb-40 items-start">
 
-        <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats interface" layout='constrained' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
+        <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats interface" layout='constrained' quality='80' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
 
         <div className='md:ml-6'>
 
@@ -152,7 +152,7 @@ const ExperiencesPage = () => {
 
       </div>
 
-      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       
       <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-28 max-w-none'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
