@@ -1,6 +1,8 @@
 import * as React from 'react'
 import LayoutExp from '../components/layout_exp'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { ArrowLeft } from 'react-feather'
 
 const ExperiencesPage = () => {
   return (
@@ -8,18 +10,22 @@ const ExperiencesPage = () => {
 
       <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
 
-      <h1 className="col-start-2 mb-6 md:mb-8 text-light-gray text-left">RoleEver</h1>
+      <div className='flex flex-col content-around col-start-2 mb-16 md:mb-32'>
 
-      <p className="col-start-2 mb-16 md:mb-32 text-left max-w-none">
-        RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/><br/>
-        My experiece with RoleEver, started as trainee and later as team member.
-      </p>
+        <h1 className="mb-6 md:mb-8 text-light-gray text-left">RoleEver</h1>
 
-      <div className="flex gap-12 md:gap-20 flex-col sm:flex-row md:ml-20 xl:ml-56 col-start-2 md:col-span-full mb-16 md:mb-28 items-start">
+        <p className="text-left max-w-4xl">
+          RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/><br/>
+          My experiece with RoleEver, started as trainee and later as team member.
+        </p>
+
+      </div>
+
+      <div className="flex flex-col gap-12 sm:flex-row col-start-2 mb-20 md:mb-28 sm:justify-around sm:items-center">
         
-        <StaticImage src="../../content/assets/images/features-1.jpg" alt="User Friendlist" layout='constrained' quality='80' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
+        <StaticImage src="../../content/assets/images/features-1.jpg" alt="User Friendlist" layout='constrained' quality='100' width='412' placeholder='tracedSVG' className="box order-last sm:order-first md:max-w-[40%]" />
 
-        <div className='md:mr-6'>
+        <div>
 
           <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Early works</h3>
           <p className='mb-0 xs:mb-10 max-w-xl text-left'>
@@ -31,11 +37,11 @@ const ExperiencesPage = () => {
 
       </div>
 
-      <div className="flex gap-12 md:gap-20 flex-col sm:flex-row-reverse col-start-2 md:col-span-full mb-16 md:mr-20 xl:mr-56 md:mb-40 items-start">
+      <div className="flex flex-col gap-12 sm:flex-row-reverse col-start-2 mb-20 md:mb-40 sm:justify-around sm:items-center">
 
-        <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats interface" layout='constrained' quality='80' width='412' placeholder='tracedSVG' className="box order-last xs:order-first max-w-[80%] md:max-w-[40%] self-center" />
+        <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats interface" layout='constrained' quality='80' width='412' placeholder='tracedSVG' className="box order-last sm:order-first md:max-w-[40%1]" />
 
-        <div className='md:ml-6'>
+        <div>
 
           <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Late works</h3>
           <p className='mb-0 xs:mb-10 max-w-xl text-left'>
@@ -152,10 +158,21 @@ const ExperiencesPage = () => {
 
       </div>
 
-      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='100' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       
-      <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-28 max-w-none'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
+      <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-20 max-w-none'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
+
+      <div className='col-start-2 justify-self-center'>
+        <button className="xs:px-6 xs:py-4 mb-12">
+          <Link
+            className='flex gap-3 items-center'
+            to="/"
+          >
+            <ArrowLeft className='inline-block relative animate-bounce-left' size='1.20rem' /> Back
+          </Link>
+        </button>
+      </div>
 
     </LayoutExp>
   )
