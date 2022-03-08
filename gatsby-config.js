@@ -24,12 +24,13 @@ module.exports = {
       options: {
         token: process.env.TOKEN,
         graphQLQuery: `
-          query {
-            user(login: "5p1n0") {
-              id
-              repositories(first: 10, privacy: PUBLIC) {
-                edges {
-                  node {
+        query {
+          user(login: "5p1n0") {
+            id
+            pinnedItems(first: 10) {
+              edges {
+                node {
+                  ... on Repository {
                     name
                     description
                     forkCount
@@ -46,6 +47,7 @@ module.exports = {
               }
             }
           }
+        }
         `
       },
     }

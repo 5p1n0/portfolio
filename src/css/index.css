@@ -30,7 +30,7 @@ h3 {
 }
 
 h1 {
-  @apply text-medium xs:text-5xl xl:text-max 
+  @apply text-medium xs:text-5xl xl:text-[4rem] xl:leading-tight
 }
 
 h2 {

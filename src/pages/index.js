@@ -17,7 +17,7 @@ const IndexPage = () => {
         data {
           user {
             id
-            repositories {
+            pinnedItems {
               edges {
                 node {
                   description
@@ -67,13 +67,13 @@ const IndexPage = () => {
         </div>
 
         <h1 className="text-light-gray mb-5 xs:mb-10 md:mb-14">
-          I'm Luca,<br/> a web developer.
+          I'm Luca,<br/> a software developer.
         </h1>
 
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg lg:max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus.
+            Enthusiastic about all things related to web development, always fiddling with code and eager to improve what i'm working with.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +169,7 @@ const IndexPage = () => {
         <div className="ml-6 mb-8 sm:ml-[12%] flex flex-col gap-12 sm:relative sm:trunk sm:after:left-0">
           
           {
-            data.githubData.data.user.repositories.edges.map(
+            data.githubData.data.user.pinnedItems.edges.map(
               (repo, i) => {
                 return <Projects key={i} repo={repo.node} />
               }
@@ -230,22 +230,17 @@ const IndexPage = () => {
         </div>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare libero, quis facilisis risus. Vestibulum ac arcu ligula. In vel lacinia mi. Donec molestie vitae ligula ut sodales.
+          I'm a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work and grow in the startup environment
+          and got the chance of work across the full stack of web development.
+        </p>
+        
+        <p className="md:mb-8 md:max-w-xs lg:max-w-md">
+          This taught me the flexibility to work in any domain and face many challenges with open mind.
         </p>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-md">
-          Vestibulum ac arcu ligula.<br /> In vel lacinia mi:
+          I'm currently focussed on expanding my experience as developer and growing a career in tech.
         </p>
-
-        <ul className="list-disc list-outside marker:text-lg ml-4 md:ml-3 mb-10 xs:mb-14 md:mb-10 md:max-w-xs lg:max-w-sm">
-
-          <li className="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-
-          <li className="mb-6">Integer nec ornare libero, quis facilisis risus.</li>
-
-          <li className="mb-6">Donec molestie vitae ligula ut sodales.</li>
-
-        </ul>
 
         <button className="xs:px-6 xs:py-4">
           <Link
@@ -266,7 +261,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare libero, quis facilisis risus. Vestibulum ac arcu ligula.</p>
+          <p className="max-w-screen-sm mb-13">Feel free to reach out if you want a to build something together, have a question, or just want to connect.</p>
 
           <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
             <Link
