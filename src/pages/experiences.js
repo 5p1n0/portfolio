@@ -1,12 +1,12 @@
 import * as React from 'react'
-import LayoutExp from '../components/layout_exp'
+import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ArrowLeft } from 'react-feather'
 
 const ExperiencesPage = () => {
   return (
-    <LayoutExp>
+    <Layout gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)_minmax(16px,0.2fr)]'>
 
       <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
 
@@ -184,7 +184,7 @@ const ExperiencesPage = () => {
         </Link>
       </div>
 
-    </LayoutExp>
+    </Layout>
   )
 }
 

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { Circle, GitHub, Code } from 'react-feather'
 import { StaticImage } from 'gatsby-plugin-image'
-import LayoutIndex from '../components/layout_index'
+import Layout from '../components/layout'
 import Projects from '../components/projects'
 import Seo from '../components/seo'
 
@@ -42,7 +42,7 @@ const IndexPage = () => {
 
 
   return (
-    <LayoutIndex>
+    <Layout gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
 
       <Seo />
 
@@ -129,7 +129,7 @@ const IndexPage = () => {
           to="/experiences"
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
-            <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' quality='80' className="transition duration-500 ease-in-out group-hover:opacity-20 group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
+            <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:opacity-20 group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
             <h4 className='transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-x-0 top-1/4 md:top-1/3 text-center mb-0 px-2 pt-2 max-w-[18rem] xs:max-w-[34rem] md:max-w-full'>Check about my experience with RoleEver</h4>  
           </div>
           
@@ -279,7 +279,7 @@ const IndexPage = () => {
       </section>
 
 
-    </LayoutIndex>
+    </Layout>
   )
 }
 

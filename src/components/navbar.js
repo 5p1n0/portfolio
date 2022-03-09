@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from "gatsby"
 
-const NavbarIndex = () => {
+const Navbar = () => {
   
   return (
     <header className="transition-padding duration-300 ease pt-6 pb-7 md:pt-10 md:pb-9">
@@ -71,4 +71,4 @@ const NavbarIndex = () => {
   )
 }
 
-export default NavbarIndex
+export default Navbar
