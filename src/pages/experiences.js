@@ -174,14 +174,14 @@ const ExperiencesPage = () => {
       <p className='text-center col-start-2 font-heading italic font-semibold md:text-2xl lg:text-3xl lg:leading-relaxed mb-12 md:mb-20 max-w-none'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
 
       <div className='col-start-2 justify-self-center'>
-        <button className="xs:px-6 xs:py-4 mb-12">
-          <Link
-            className='flex gap-3 items-center'
-            to="/#experiences"
-          >
-            <ArrowLeft className='inline-block relative animate-bounce-left' size='1.20rem' /> Back
-          </Link>
-        </button>
+        <Link
+          className=''
+          to="/#experiences"
+        >
+          <button className="flex gap-3 items-center xs:px-6 xs:py-4 mb-12">
+              <ArrowLeft className='inline-block relative animate-bounce-left' size='1.20rem' /> Back
+          </button>
+        </Link>
       </div>
 
     </LayoutExp>
