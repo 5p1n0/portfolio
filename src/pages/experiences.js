@@ -8,18 +8,22 @@ const ExperiencesPage = () => {
   return (
     <Layout gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)_minmax(16px,0.2fr)]'>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="mb-12 xs:mb-20 col-span-full" />
+      <div className='relative z-10 col-start-2 mb-8 md:mb-44'>
 
-      <div className='flex flex-col content-around col-start-2 mb-16 md:mb-32'>
+        <div className='flex min-h-[384px] max-h-[440px] flex-col justify-evenly items-start sm:items-center'>
 
-        <h1 className="mb-6 md:mb-8 text-light-gray text-left">RoleEver</h1>
+          <h1 className="text-white">RoleEver</h1>
+          
+          <p className="text-left sm:text-center text-white max-w-3xl">
+            RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/><br/>
+            My experiece with RoleEver, started as trainee and later as team member.
+          </p>
 
-        <p className="text-left max-w-4xl">
-          RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/><br/>
-          My experiece with RoleEver, started as trainee and later as team member.
-        </p>
+        </div>
 
       </div>
+
+      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="col-span-full absolute inset-x-0 min-h-[384px] max-h-[440px] after:h-full after:w-full after:top-0 after:absolute after:bg-gradient-to-t after:from-dark-gray grop opacity-80" />
 
       <div className="flex flex-col gap-12 sm:flex-row col-start-2 mb-20 md:mb-28 sm:justify-around sm:items-center">
         
