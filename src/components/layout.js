@@ -7,7 +7,7 @@ const Layout = ({gridLayout, children}) => {
 
   return (
     <div className="bg-dark-gray">   
-      <Headroom>
+      <Headroom className='relative z-30'>
         <Navbar />
       </Headroom>  
       <main className={`grid ${gridLayout}`}>{children}</main>
