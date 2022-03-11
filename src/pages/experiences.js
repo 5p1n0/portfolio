@@ -23,7 +23,7 @@ const ExperiencesPage = () => {
 
       </div>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className="col-span-full absolute inset-x-0 min-h-[384px] max-h-[440px] after:h-full after:w-full after:top-0 after:absolute after:bg-gradient-to-t after:from-dark-gray grop opacity-80" />
+      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='80' layout='fullWidth' placeholder='tracedSVG' className=" absolute inset-x-0 min-h-[384px] max-h-[440px] after:h-full after:w-full after:top-0 after:absolute after:bg-gradient-to-t after:from-dark-gray grop opacity-80" />
 
       <div className="flex flex-col gap-12 sm:flex-row col-start-2 mb-20 md:mb-28 sm:justify-around sm:items-center">
         
