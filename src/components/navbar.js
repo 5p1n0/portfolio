@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from "gatsby"
 
-const Navbar = () => {
+const Navbar = ({anchorLinks}) => {
   
   return (
     <header className="transition-padding duration-300 ease pt-6 pb-7 md:pt-10 md:pb-9">
@@ -16,7 +16,7 @@ const Navbar = () => {
 
         <div> 
            
-          <ul className="hidden lg:inline">
+          <ul className={`${anchorLinks == true ? `hidden lg:inline` : `hidden`}`}>
             
             <li key={4} className="inline ml-2 px-4">
               <Link
@@ -56,13 +56,13 @@ const Navbar = () => {
 
           </ul>
 
-          <button className="ml-3 px-5">
-            <Link
-              to="/"
-            >
+          <Link
+            to="/"
+          >
+            <button className="ml-3 px-5">
               Resume
-            </Link>
-          </button>
+            </button>
+          </Link>
 
         </div>
 

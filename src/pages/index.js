@@ -42,7 +42,7 @@ const IndexPage = () => {
 
 
   return (
-    <Layout gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
+    <Layout isIndex={true} gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
 
       <Seo />
 
@@ -95,14 +95,13 @@ const IndexPage = () => {
 
         </div>
 
-
-        <button className="xs:px-6 xs:py-4">
-          <Link
-            to="/"
-          >
+        <Link
+          to="#contact"
+        >
+          <button className="xs:px-6 xs:py-4">
             Contact Me
-          </Link>
-        </button>
+          </button>
+        </Link>
 
         <div id="experiences" className="invisible"></div>
       </section>
@@ -236,14 +235,6 @@ const IndexPage = () => {
           I'm currently focussed on expanding my experience as developer and growing a career in tech.
         </p>
 
-        <button className="xs:px-6 xs:py-4">
-          <Link
-            to="/"
-          >
-            Contact Me
-          </Link>
-        </button>
-
         <div id="contact" className="invisible"></div>
 
       </section>
@@ -257,17 +248,21 @@ const IndexPage = () => {
 
           <p className="max-w-screen-sm mb-13">Feel free to reach out if you want a to build something together, have a question, or just want to connect.</p>
 
-          <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
-            <Link
-              to="/"
-            >
+          <Link
+            to="mailto:lc.spn@mailfence.com"
+          >
+            <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
               Let's Talk
-            </Link>
-          </button>
+            </button>
+          </Link>
 
           <p className="mb-6">Bologna - Italy</p>
 
-          <p className="mb-[9%] underline text-vivid-orange">+39 111 223344<br />lucaspinosi@gmail.com</p>
+          <Link
+            to="mailto:lc.spn@mailfence.com"
+          >
+            <p className="mb-20 underline text-vivid-orange">lc.spn@mailfence.com</p>
+          </Link>
 
         </div>
       </section>

@@ -6,7 +6,7 @@ import { ArrowLeft } from 'react-feather'
 
 const ExperiencesPage = () => {
   return (
-    <Layout gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
+    <Layout isIndex={false} gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
 
       <section className='relative z-10 col-start-2 mb-8 md:mb-44'>
 
