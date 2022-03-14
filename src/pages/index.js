@@ -72,7 +72,7 @@ const IndexPage = () => {
 
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
-          <p className="md:mb-20 md:max-w-lg lg:max-w-2xl">
+          <p className="md:mb-20 md:max-w-lg">
             Enthusiastic about all things related to web development, always fiddling with code and eager to improve what i'm working with.
           </p>
 
@@ -229,16 +229,10 @@ const IndexPage = () => {
           <div className="inner-box box top-[8%] left-[8%]"></div>
         </div>
 
-        <p className="md:mb-8 md:max-w-xs lg:max-w-md">
+        <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
           I'm a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work and grow in the startup environment
-          and got the chance of work across the full stack of web development.
-        </p>
-        
-        <p className="md:mb-8 md:max-w-xs lg:max-w-md">
-          This taught me the flexibility to work in any domain and face many challenges with open mind.
-        </p>
-
-        <p className="md:mb-8 md:max-w-xs lg:max-w-md">
+          and got the chance of work across the full stack of web development.<br/><br/>
+          This taught me the flexibility to work in any domain and face many challenges with open mind.<br/><br/>
           I'm currently focussed on expanding my experience as developer and growing a career in tech.
         </p>
 

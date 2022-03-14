@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-small xs:text-base scroll-smooth 
+  @apply text-small leading-normal xs:text-base scroll-smooth 
 }
 
 header {
