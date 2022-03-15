@@ -185,6 +185,7 @@ const IndexPage = () => {
             className='text-sm group-hover:text-vivid-orange text-light-gray'
             href="https://github.com/5p1n0" 
             target="_blank"
+            rel='noreferrer'
           >
             Check my GitHub profile!
           </a>
