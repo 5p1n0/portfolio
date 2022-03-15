@@ -1,11 +1,30 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
 
 const NotFoundPage = () => {
   return (
-    <div className="bg-dark-gray">
-      <h3>Page not Found</h3>
-      <p>Socc'mel!</p>
-    </div>
+
+    <main className='grid justify-items-center items-center h-screen bg-dark-gray'>
+      
+      <div className='flex flex-col gpa-4'>
+
+        <div className='flex items-center'>
+          <p className='px-4 border-r-2 border-vivid-orange text-3xl bold font-heading text-vivid-orange relative'>404</p>
+          <p className='px-4 text-xl text-vivid-orange font-heading'>Page Not Found</p>
+        </div>
+
+        <Link
+          className='self-center'
+          to="/"
+        >
+          <button className="xs:px-6 xs:py-4">
+            Back to homepage
+          </button>
+        </Link>
+
+      </div>
+
+    </main>
   )
 }
 

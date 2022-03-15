@@ -6,9 +6,6 @@ import Layout from '../components/layout'
 import Projects from '../components/projects'
 import Seo from '../components/seo'
 
-<div className="inner-box box top-[10%] left-[6%] md:top-[8%] md:left-[4%]"></div>
-
-
 const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
