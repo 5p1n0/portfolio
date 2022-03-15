@@ -57,7 +57,7 @@ const IndexPage = () => {
           <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
-            size="1rem"
+            size={16}
           />
 
           <h1 className="text-vivid-orange">
@@ -115,7 +115,7 @@ const IndexPage = () => {
           <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
-            size="1rem"
+            size={16}
           />
 
           <h2>
@@ -143,13 +143,13 @@ const IndexPage = () => {
       <section className="col-start-2 text-left mb-[22%] xs:mb-[10%]">
 
         <svg
-          className="hidden sm:block w-[12%] stroke-dark-gray-light mb-6"
+          className="hidden sm:block w-[12%] stroke-1 stroke-dark-gray-light mb-6"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           fill="none"
           viewBox="0 0 110 142"
         >
-          <path d="m1-8c0 75 108 75 108 150" stroke-width="1" vector-effect="non-scaling-stroke" />
+          <path d="m1-8c0 75 108 75 108 150" />
         </svg>
 
         
@@ -158,7 +158,7 @@ const IndexPage = () => {
           <Code 
             className='bg-dark-gray self-center relative z-20'
             color="#464646"
-            size="1rem"
+            size={16}
           />
 
           <h3>Other projects</h3>
@@ -181,26 +181,26 @@ const IndexPage = () => {
 
           <GitHub 
             className="group-hover:stroke-vivid-orange stroke-light-gray bg-dark-gray self-center relative z-20"
-            size="1rem"
+            size={16}
           />
 
-          <Link
+          <a
             className='text-sm group-hover:text-vivid-orange text-light-gray'
-           to="https://github.com/5p1n0" 
+            href="https://github.com/5p1n0" 
           >
             Check my GitHub profile!
-          </Link>
+          </a>
 
         </div>
 
         <svg
-          className="hidden xs:block w-[12%] stroke-dark-gray-light svg-end"
+          className="hidden xs:block w-[12%] stroke-1 stroke-dark-gray-light svg-end"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           fill="none"
           viewBox="0 0 110 142"
         >
-          <path d="m1-8c0 75 108 75 108 150" stroke-width="1" vector-effect="non-scaling-stroke" />
+          <path d="m1-8c0 75 108 75 108 150" />
         </svg>
 
         <div id="about" className="invisible"></div>
@@ -215,7 +215,7 @@ const IndexPage = () => {
           <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
-            size="1rem"
+            size={16}
           />
 
           <h2>
@@ -248,21 +248,21 @@ const IndexPage = () => {
 
           <p className="max-w-screen-sm mb-13">Feel free to reach out if you want a to build something together, have a question, or just want to connect.</p>
 
-          <Link
-            to="mailto:lc.spn@mailfence.com"
+          <a
+            href="mailto:lc.spn@mailfence.com"
           >
             <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
               Let's Talk
             </button>
-          </Link>
+          </a>
 
           <p className="mb-6">Bologna - Italy</p>
 
-          <Link
-            to="mailto:lc.spn@mailfence.com"
+          <a
+            href="mailto:lc.spn@mailfence.com"
           >
             <p className="mb-20 underline text-vivid-orange">lc.spn@mailfence.com</p>
-          </Link>
+          </a>
 
         </div>
       </section>

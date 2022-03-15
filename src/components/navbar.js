@@ -16,7 +16,7 @@ const Navbar = ({anchorLinks}) => {
 
         <div> 
            
-          <ul className={`${anchorLinks == true ? `hidden lg:inline` : `hidden`}`}>
+          <ul className={`${anchorLinks? `hidden lg:inline` : `hidden`}`}>
             
             <li key={4} className="inline ml-2 px-4">
               <Link

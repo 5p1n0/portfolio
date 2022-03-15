@@ -10,7 +10,10 @@ const Projects = ({repo}) => {
   return (
     <div 
       className="grid grid-cols-1 grid-rows-[1.6fr_0.4fr] box p-3 md:p-4 sm:ml-6 bg-dark-gray-dark cursor-pointer transform transition duration-200 ease-in-out hover:scale-105 hover:bg-vivid-orange group w-72 h-36 md:w-96 md:h-40"
+      role='button'
+      tabIndex='0'
       onClick={() => openRepoinNewTab(repo.url)}  
+      onKeyDown={() => openRepoinNewTab(repo.url)}  
     >
 
       <div className="row-start-1">
