@@ -70,7 +70,7 @@ const IndexPage = () => {
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam sollicitudin tempor id.
+            Enthusiastic about all things related to web development, always fiddling with code and eager to improve what i'm working with.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
@@ -228,9 +228,10 @@ const IndexPage = () => {
         </div>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/><br/>
-          Nunc mi ipsum faucibus vitae aliquet. Amet mauris commodo quis imperdiet massa tincidunt nunc.<br/><br/>
-          Arcu risus quis varius quam quisque id diam vel. Nec dui nunc mattis enim.
+          I'm a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work and grow in the startup environment
+          and got the chance of work across the full stack of web development.<br /><br />
+          This taught me the flexibility to work in any domain and face many challenges with open mind.<br /><br />
+          I'm currently focussed on expanding my experience as developer and growing a career in tech.   
         </p>
 
         <div id="contact" className="invisible"></div>
