@@ -13,10 +13,9 @@ const ExperiencesPage = () => {
         <div className='flex min-h-[384px] max-h-[440px] flex-col justify-evenly items-start sm:items-center'>
 
           <h1 className="text-white">RoleEver</h1>
-          
+
           <p className="text-left sm:text-center text-white max-w-3xl">
-            RoleEver was a startup that developed a social network service to innovate how role/turn based games are played on mobile platforms.<br/><br/>
-            My experiece with RoleEver, started as trainee and later as team member.
+            We created a startup to develop a social network service to innovate how role/turn based games are played on mobile platforms.
           </p>
 
         </div>
@@ -32,10 +31,10 @@ const ExperiencesPage = () => {
 
           <div>
 
-            <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Early works</h3>
+            <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Foundation</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              As trainee my job was to develop community related features and my work was spanning between Backend/Frontend tasks.<br/><br/>
-              A core server-side feature that i've developed using Socket.IO and RxJS libs, mainly concerning socket rooms, was the real time status of users within the app.
+              I was in charge to develop communities related features and my work was spanning between Backend/Frontend tasks.<br/><br/>
+              A core server-side feature that i've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users within the app.
             </p>
 
           </div>
@@ -50,10 +49,9 @@ const ExperiencesPage = () => {
 
           <div>
 
-            <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Late works</h3>
+            <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Maturity</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              After my trainee experiece ended, the team offered me to become a member and develop an ambitious feature related to the in-app shop and user's shared content.<br/><br/>
-              This time my work was to refactor collections of user data within the database and expanding core app services and components, to enable the selection of purchased dice skins within the users shared stories.
+              Once the core services where made, my work was focussing on the in-app shop and user's shared content, all-around improving the service for users.<br /><br /> This was the fundamental part of the application.
             </p>
 
           </div>
@@ -68,7 +66,7 @@ const ExperiencesPage = () => {
           <h3 className="text-center text-vivid-orange">Tech Stack</h3>
         
           <p className="text-center max-w-3xl">
-            The tech stack i've worked with was <span className='tech before:bg-[#c3002f]'>Angular</span> as main framework, together with <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, <span className='tech before:bg-[#09934e]'>MongoDB</span> as database and <span className='tech before:bg-[#3880ff]'>Ionic</span> framework, mainly for front end related tasks.
+            I've worked with <span className='tech before:bg-[#c3002f]'>Angular</span> as main framework, together with <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, <span className='tech before:bg-[#09934e]'>MongoDB</span> as database and <span className='tech before:bg-[#3880ff]'>Ionic</span> framework, mainly for Frontend related tasks.
           </p>
 
         </div>

@@ -70,7 +70,7 @@ const IndexPage = () => {
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg">
-            Enthusiastic about all things related to web development, always fiddling with code and eager to improve what i'm working with.
+            I am passionate for technology and web development, currently pursuing a bachelor's degree, with a front-end/full-stack background of 2+ year of experience working for a startup company.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +126,7 @@ const IndexPage = () => {
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
             <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:opacity-20 group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
-            <h4 className='transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-x-0 top-1/4 md:top-1/3 text-center mb-0 px-2 pt-2 max-w-[18rem] xs:max-w-[34rem] md:max-w-full'>Check about my experience with RoleEver</h4>  
+            <h4 className='transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-x-0 top-1/4 md:top-1/3 text-center mb-0 px-2 pt-2 max-w-[18rem] xs:max-w-[34rem] md:max-w-full'>Find out more ...</h4>  
           </div>
           
         </Link>
@@ -245,7 +245,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact/reach me out if you would like work or hire me for any project.</p>
 
           <a
             href="mailto:lc.spn@mailfence.com"
