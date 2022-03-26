@@ -70,7 +70,7 @@ const IndexPage = () => {
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg">
-            I am passionate for technology and web development, currently pursuing a bachelor's degree, with a front-end/full-stack background of 2+ year of experience working for a startup company.
+            I have the passion for technology and web development, with a front-end/full-stack background of 2+ year of experience working for startups.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
@@ -228,10 +228,9 @@ const IndexPage = () => {
         </div>
 
         <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
-          I'm a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work and grow in the startup environment
-          and got the chance of work across the full stack of web development.<br /><br />
-          This taught me the flexibility to work in any domain and face many challenges with open mind.<br /><br />
-          I'm currently focussed on expanding my experience as developer and growing a career in tech.   
+          Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
+          This taught me to be flexible and face challenges with an open mind.<br /><br />
+          I'm currently focussed on expanding my skills as developer and progress a career in tech.   
         </p>
 
         <div id="contact" className="invisible"></div>
@@ -245,7 +244,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact/reach me out if you would like work or hire me for any project.</p>
+          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact me if you would like work or hire me for any project.</p>
 
           <a
             href="mailto:lc.spn@mailfence.com"

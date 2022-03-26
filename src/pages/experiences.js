@@ -33,8 +33,8 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Foundation</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              I was in charge to develop communities related features and my work was spanning between Backend/Frontend tasks.<br/><br/>
-              A core server-side feature that i've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users within the app.
+              I was in charge to develop communities-related features and my work was spanning between back and front-end tasks.<br/><br/>
+              A core server-side feature that I've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users within the app.
             </p>
 
           </div>
@@ -51,7 +51,7 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Maturity</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              Once the core services where made, my work was focussing on the in-app shop and user's shared content, all-around improving the service for users.<br /><br /> This was the fundamental part of the application.
+              Once we made the core services, my work shifted on the in-app shop and user's shared content, ultimately improving the user experience.<br /><br /> This was the fundamental part of the application.
             </p>
 
           </div>
@@ -66,7 +66,7 @@ const ExperiencesPage = () => {
           <h3 className="text-center text-vivid-orange">Tech Stack</h3>
         
           <p className="text-center max-w-3xl">
-            I've worked with <span className='tech before:bg-[#c3002f]'>Angular</span> as main framework, together with <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, <span className='tech before:bg-[#09934e]'>MongoDB</span> as database and <span className='tech before:bg-[#3880ff]'>Ionic</span> framework, mainly for Frontend related tasks.
+            I've worked with <span className='tech before:bg-[#c3002f]'>Angular</span> as main framework, together with <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, <span className='tech before:bg-[#09934e]'>MongoDB</span> as database and <span className='tech before:bg-[#3880ff]'>Ionic</span> framework, mainly for front-end related tasks.
           </p>
 
         </div>
@@ -187,7 +187,7 @@ const ExperiencesPage = () => {
       <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='100' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 justify-self-center mb-12 md:mb-20'>
-        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, i learned how to communicate and collaborate with a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full stack skills."</p>
+        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to communicate and collaborate in a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full-stack skills."</p>
       </section>
 
       <div className='col-start-2 justify-self-center'>
