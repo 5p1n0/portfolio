@@ -244,7 +244,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact me if you would like work or hire me for any project.</p>
+          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact me if you would like to work or hire me for any project.</p>
 
           <a
             href="mailto:lc.spn@mailfence.com"

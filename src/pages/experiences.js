@@ -8,11 +8,11 @@ const ExperiencesPage = () => {
   return (
     <Layout isIndex={false} gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
 
-      <section className='relative z-10 col-start-2 mb-8 md:mb-44'>
+      <section className='relative z-10 col-start-2 sm:mb-8'>
 
-        <div className='flex min-h-[384px] max-h-[440px] flex-col justify-evenly items-start sm:items-center'>
+        <div className='flex flex-col h-72 justify-center items-start sm:items-center'>
 
-          <h1 className="text-white">RoleEver</h1>
+          <h1 className="text-white mb-8">RoleEver</h1>
 
           <p className="text-left sm:text-center text-white max-w-3xl">
             We created a startup to develop a social network service to innovate how role/turn based games are played on mobile platforms.
@@ -22,7 +22,7 @@ const ExperiencesPage = () => {
 
       </section>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" quality='100' layout='fullWidth' placeholder='tracedSVG' className=" !absolute inset-x-0 min-h-[384px] max-h-[440px] opacity-80 after:h-full after:w-full after:top-0 after:absolute after:bg-gradient-to-t after:from-dark-gray" />
+      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' quality='100' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 mb-20 md:mb-28'>
         <div className="flex flex-col sm:flex-row gap-12 xl:gap-0 justify-evenly items-start sm:items-center">
