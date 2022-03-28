@@ -9,6 +9,7 @@ const Navbar = ({anchorLinks}) => {
         
         <Link 
           className="px-1"
+          name="Home"
           to="/"
         >
           <svg width="43" height="64" viewBox="0 0 43 64">

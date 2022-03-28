@@ -23,6 +23,9 @@ const Seo = () => {
   return (
     <Helmet 
       titleTemplate={title}
+      htmlAttributes={{
+        lang: 'en',
+      }}
       defaultTitle="My Portfolio"
       meta={[
         {
