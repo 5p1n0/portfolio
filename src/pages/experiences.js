@@ -1,10 +1,38 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ArrowLeft } from 'react-feather'
+import MyImage from '../components/utils'
 
 const ExperiencesPage = () => {
+
+  const data = useStaticQuery(graphql`
+    {
+      large: allFile(filter: {name: {eq: "hero-1-mod"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+      
+      small: allFile(filter: {name: {eq: "hero-1"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      } 
+    }
+  `)
+
   return (
     <Layout isIndex={false} gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
 
@@ -26,7 +54,7 @@ const ExperiencesPage = () => {
 
       </section>
 
-      <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' quality='100' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+      <MyImage data={data} />
 
       <section className='col-start-2 mb-20 md:mb-28'>
         <div className="flex flex-col sm:flex-row gap-12 xl:gap-0 justify-evenly items-start sm:items-center">
@@ -46,7 +74,7 @@ const ExperiencesPage = () => {
         </div>
       </section>
 
-      <section className='col-start-2 mb-20 md:mb-40'>
+      <section className='col-start-2 mb-20 md:mb-32'>
         <div className="flex flex-col sm:flex-row-reverse gap-12 xl:gap-0 justify-evenly items-start sm:items-center">
 
           <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats" layout='constrained' quality='80' width={412} height={436} placeholder='tracedSVG' className="box order-last sm:order-first" />
@@ -63,7 +91,6 @@ const ExperiencesPage = () => {
         </div>
       </section>
 
-
       <section className='col-start-2 mb-20'>
         <div className='flex flex-col min-h-[200px] items-center justify-between'>
           
@@ -75,7 +102,6 @@ const ExperiencesPage = () => {
 
         </div>
       </section>
-
 
       <section className='col-start-2 mb-20'>
         <div className='flex flex-wrap gap-6 md:gap-12 justify-center'>
@@ -188,7 +214,7 @@ const ExperiencesPage = () => {
         </div>
       </section>
 
-      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='100' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 justify-self-center mb-12 md:mb-20'>
         <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to communicate and collaborate in a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full-stack skills."</p>
@@ -203,7 +229,6 @@ const ExperiencesPage = () => {
           </button>
         </Link>
       </div>
-
 
     </Layout>
   )

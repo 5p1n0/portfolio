@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Navbar = ({anchorLinks}) => {
   
   return (
-    <header className="transition-padding duration-300 ease py-6 md:py-8">
+    <header className="transition-padding duration-300 ease py-4 md:py-6">
       <div className="flex items-center justify-between">
         
         <Link 

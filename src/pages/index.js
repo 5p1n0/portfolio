@@ -107,7 +107,7 @@ const IndexPage = () => {
 
       <section className="col-start-2 text-left ml-6 mb-[22%] xs:mb-[12%]">
 
-        <div className="circle mb-5 xs:mb-10 md:mb-14">
+        <div className="circle mb-5 xs:mb-10">
 
           <Circle
             className="bg-dark-gray self-center relative z-20"
@@ -121,12 +121,15 @@ const IndexPage = () => {
 
         </div>
 
+        <p className="xs:mb-10 md:mb-14 md:max-w-lg">
+          Find out more about my prior work experience
+        </p>
+
         <Link 
           to="/experiences"
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
-            <StaticImage src="../../content/assets/images/hero-1.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:opacity-20 group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
-            <span className='font-heading text-light-gray text-base sm:text-2xl lg:text-3xl transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 absolute inset-x-0 top-1/4 md:top-1/3 text-center mb-0 px-2 pt-2 max-w-[18rem] xs:max-w-[34rem] md:max-w-full'>Find out more ...</span>  
+            <StaticImage src="../../content/assets/images/logo.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
           </div>
           
         </Link>
@@ -230,7 +233,7 @@ const IndexPage = () => {
         <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
           Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
           This taught me to be flexible and face challenges with an open mind.<br /><br />
-          I'm currently focussed on expanding my skills as developer and progress a career in tech.   
+          I'm currently focused on expanding my skills as developer and progress a career in tech.   
         </p>
 
         <div id="contact" className="invisible"></div>
