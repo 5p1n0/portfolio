@@ -6,7 +6,7 @@ const NotFoundPage = () => {
 
     <main className='grid justify-items-center items-center h-screen bg-dark-gray'>
       
-      <div className='flex flex-col gpa-4'>
+      <div className='flex flex-col p-4'>
 
         <div className='flex items-center'>
           <p className='px-4 border-r-2 border-vivid-orange text-3xl bold font-heading text-vivid-orange relative'>404</p>

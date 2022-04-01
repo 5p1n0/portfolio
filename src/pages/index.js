@@ -153,7 +153,7 @@ const IndexPage = () => {
         </svg>
 
         
-        <div className="flex gap-4 -ml-2 mb-5 sm:ml-[11.2%] sm:mb-8">
+        <div className="flex gap-4 sm:gap-10 -ml-2 mb-6 sm:ml-[11.2%] sm:mb-10">
 
           <Code 
             className='bg-dark-gray self-center relative z-20'
@@ -165,7 +165,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div className="ml-6 mb-8 sm:ml-[12%] flex flex-col gap-12 sm:relative sm:trunk sm:after:left-0">
+        <div className="ml-6 mb-10 sm:ml-[12%] flex flex-col gap-12 sm:relative sm:trunk sm:after:left-0">
           
           {
             data.githubData.data.user.pinnedItems.edges.map(
@@ -177,7 +177,7 @@ const IndexPage = () => {
 
         </div>
 
-        <div className="flex gap-4 ml-6 sm:ml-[11.2%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer sm:mb-6">
+        <div className="flex gap-4 ml-6 sm:ml-[11.2%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer sm:mb-10">
 
           <GitHub 
             className="group-hover:stroke-vivid-orange stroke-light-gray bg-dark-gray self-center relative z-20"
@@ -196,7 +196,7 @@ const IndexPage = () => {
         </div>
 
         <svg
-          className="hidden xs:block w-[12%] stroke-1 stroke-dark-gray-light svg-end"
+          className="hidden sm:block w-[12%] stroke-1 stroke-dark-gray-light svg-end"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           fill="none"
@@ -208,12 +208,11 @@ const IndexPage = () => {
         <div id="about" className="invisible"></div>
       </section>
 
-      <div className="col-start-1 relative trunk"></div>
+      <div className="block lg:hidden col-start-1 relative trunk"></div>
 
-      <section className="col-start-2 text-left ml-6 mb-[10%]">
-
-        <div className="circle mb-5 xs:mb-10 md:mb-14">
-
+      <section className="col-start-2 lg:col-span-full text-left ml-6 before:lg:absolute before:lg:z-10 before:lg:h-px before:lg:w-11/12 before:lg:bg-dark-gray-light">
+        
+        <div className="lg:hidden circle mb-5 xs:mb-10 md:mb-14">
           <Circle
             className="bg-dark-gray self-center relative z-20"
             color="#464646"
@@ -223,18 +222,29 @@ const IndexPage = () => {
           <h2>
             About me
           </h2>
-
         </div>
-
-        <div className="float-right box bg-dark-gray-light hidden mr-4 xl:mr-6 xl:ml-6 xl:block xl:h-40 xl:w-40 2xl:h-72 2xl:w-72">
-          <div className="inner-box box top-[8%] left-[8%]"></div>
-        </div>
-
-        <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
+        
+        <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
           Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
           This taught me to be flexible and face challenges with an open mind.<br /><br />
-          I'm currently focused on expanding my skills as developer and progress a career in tech.   
+          I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
+
+        <div className='hidden lg:flex justify-center gap-16 my-[5%] items-center'>
+          <StaticImage src="../../content/assets/images/placeholder.png" alt="Profile picture" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
+          
+          <div>
+            <h2 className='mb-5 md:mb-8'>
+              About me
+            </h2>
+
+            <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
+              Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
+              This taught me to be flexible and face challenges with an open mind.<br /><br />
+              I'm currently focused on expanding my skills as developer and progress a career in tech.   
+            </p>
+          </div>
+        </div>
 
         <div id="contact" className="invisible"></div>
 
