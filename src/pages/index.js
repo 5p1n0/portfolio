@@ -129,7 +129,7 @@ const IndexPage = () => {
           to="/experiences"
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
-            <StaticImage src="../../content/assets/images/logo.jpg" alt="RoleEver" layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
+            <StaticImage src="../../content/assets/images/logo.jpg" alt="RoleEver" formats={["auto", "avif", "webp"]} layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
           </div>
           
         </Link>
@@ -231,7 +231,7 @@ const IndexPage = () => {
         </p>
 
         <div className='hidden lg:flex justify-center gap-16 my-[5%] items-center'>
-          <StaticImage src="../../content/assets/images/placeholder.png" alt="Profile picture" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
+          <StaticImage src="../../content/assets/images/placeholder.png" alt="Profile picture" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
           
           <div>
             <h2 className='mb-5 md:mb-8'>

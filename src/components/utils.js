@@ -10,5 +10,5 @@ export default function MyImage({data}) {
     }
   ])
 
-  return <GatsbyImage image={images} alt="RoleEver" layout='fullWidth' quality='80' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+  return <GatsbyImage image={images} alt="RoleEver" layout='fullWidth' formats={["auto", "avif", "webp"]} quality='80' placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 }
