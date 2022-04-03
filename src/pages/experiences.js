@@ -59,7 +59,7 @@ const ExperiencesPage = () => {
       <section className='col-start-2 mb-20 md:mb-28'>
         <div className="flex flex-col sm:flex-row gap-12 xl:gap-0 justify-evenly items-start sm:items-center">
           
-          <StaticImage src="../../content/assets/images/features-1.jpg" alt="Friendlist" layout='constrained' quality='80' width={412} height={436} formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="box order-last sm:order-first" />
+          <StaticImage src="../images/features-1.jpg" alt="Friendlist" layout='constrained' quality='80' width={412} height={436} formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="box order-last sm:order-first" />
 
           <div>
 
@@ -77,7 +77,7 @@ const ExperiencesPage = () => {
       <section className='col-start-2 mb-20 md:mb-32'>
         <div className="flex flex-col sm:flex-row-reverse gap-12 xl:gap-0 justify-evenly items-start sm:items-center">
 
-          <StaticImage src="../../content/assets/images/features-2.jpg" alt="Chats" layout='constrained' formats={["auto", "avif", "webp"]} quality='80' width={412} height={436} placeholder='tracedSVG' className="box order-last sm:order-first" />
+          <StaticImage src="../images/features-2.jpg" alt="Chats" layout='constrained' formats={["auto", "avif", "webp"]} quality='80' width={412} height={436} placeholder='tracedSVG' className="box order-last sm:order-first" />
 
           <div>
 
@@ -214,7 +214,7 @@ const ExperiencesPage = () => {
         </div>
       </section>
 
-      <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
+      <StaticImage src="../images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 justify-self-center mb-12 md:mb-20'>
         <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to be a team player, work with Scrum methodology, contribute for a large-scale project and at last, improved my developer full-stack skills."</p>

@@ -129,7 +129,7 @@ const IndexPage = () => {
           to="/experiences"
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
-            <StaticImage src="../../content/assets/images/logo.jpg" alt="RoleEver" formats={["auto", "avif", "webp"]} layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
+            <StaticImage src="../images/logo.jpg" alt="RoleEver logo" formats={["auto", "avif", "webp"]} layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />
           </div>
           
         </Link>
@@ -226,12 +226,12 @@ const IndexPage = () => {
         
         <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
           Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
-          From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
+          From this experience i've learned to be flexible pictureand solved many challenges with creativity and dedication.<br /><br />
           I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
 
         <div className='hidden lg:flex justify-center gap-16 my-[5%] items-center'>
-          <StaticImage src="../../content/assets/images/placeholder.png" alt="Profile picture" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
+          <StaticImage src='../images/placeholder.png' alt="Me" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
           
           <div>
             <h2 className='mb-5 md:mb-8'>
