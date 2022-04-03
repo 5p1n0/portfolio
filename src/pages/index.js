@@ -225,8 +225,8 @@ const IndexPage = () => {
         </div>
         
         <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
-          Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
-          This taught me to be flexible and face challenges with an open mind.<br /><br />
+          Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
+          From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
           I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
 
@@ -239,8 +239,8 @@ const IndexPage = () => {
             </h2>
 
             <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
-              Hi, i'm Luca Spinosi, a software deleveloper from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to grow with startups, which has given me the chance to work in many domains.<br /><br />
-              This taught me to be flexible and face challenges with an open mind.<br /><br />
+              Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
+              From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
               I'm currently focused on expanding my skills as developer and progress a career in tech.   
             </p>
           </div>

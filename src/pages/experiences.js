@@ -47,7 +47,7 @@ const ExperiencesPage = () => {
           </svg>
 
           <p className="text-left sm:text-center text-white max-w-3xl">
-            We created a startup to develop a social network service to innovate how role/turn based games are played on mobile platforms.
+            We created a startup to develop a social network service to innovate how role-turn based games are played on mobile platforms.
           </p>
 
         </div>
@@ -65,7 +65,7 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Foundation</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              I was in charge to develop communities-related features and my work was spanning between back and front-end tasks.<br/><br/>
+              I was in charge to create features for end users and my work was spanning between back and front-end tasks.<br/><br/>
               A core server-side feature that I've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users within the app.
             </p>
 
@@ -217,7 +217,7 @@ const ExperiencesPage = () => {
       <StaticImage src="../../content/assets/images/hero-2.jpg" alt="screens" layout='fullWidth' quality='80' formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 justify-self-center mb-12 md:mb-20'>
-        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to communicate and collaborate in a team and work using Scrum methodology, how to understand and contribute to improve an existing project and at last, improve my developer full-stack skills."</p>
+        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to be a team player, work with Scrum methodology, contribute for a large-scale project and at last, improved my developer full-stack skills."</p>
       </section>
 
       <div className='col-start-2 justify-self-center'>
