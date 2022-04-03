@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "My Portfolio",
+    title: "Luca Spinosi | Software Developer",
     description: "My AWESOME portfolio",
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/src/images/`,
         name: `assets`,
       },
     },
