@@ -10,10 +10,10 @@ const Seo = ({ title, description }) => {
         site {
           siteMetadata {
             title
-            description
             author
-            keywords
+            description
             siteUrl
+            lang
           }
         }
       }
@@ -22,6 +22,7 @@ const Seo = ({ title, description }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const metaTitleTemplate = site.siteMetadata.title || ''
+  const lang = site.siteMetadata.lang || 'en'
 
   return (
     <Helmet
@@ -59,22 +60,9 @@ const Seo = ({ title, description }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]}
     />
   )
-}
-
-Seo.defaultProps = {
-  lang: `en`,
-  description: ``,
-  meta: [],
-}
-
-Seo.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Seo

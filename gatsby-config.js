@@ -7,7 +7,8 @@ module.exports = {
     title: "Luca Spinosi - Software Developer",
     author: "Luca Spinosi",
     description: "Hi, i'm a full-stack developer with a background of 2+ years of experience working for startups.",
-    siteurl: "https://spino.dev"
+    siteUrl: "https://spino.dev",
+    lang: "en"
   },
   plugins: [
     "gatsby-plugin-image",
