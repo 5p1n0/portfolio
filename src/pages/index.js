@@ -41,7 +41,10 @@ const IndexPage = () => {
   return (
     <Layout isIndex={true} gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
 
-      <Seo />
+      <Seo
+        title="Homepage"   
+        description="Luca Spinosi &mdash; Software Developer based in Bologna, Emilia-Romagna"
+      />
 
       <div className="col-span-full mb-[5%]"></div>
 
@@ -70,7 +73,7 @@ const IndexPage = () => {
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg">
-            I have the passion for technology and web development, with a front-end/full-stack background of 2+ year of experience working for startups.
+            I have the passion for technology and web development, with a full-stack background of 2+ years of experience working for startups.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">

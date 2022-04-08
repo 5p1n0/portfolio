@@ -36,6 +36,11 @@ const ExperiencesPage = () => {
   return (
     <Layout isIndex={false} gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
 
+      <Seo
+        title="Work Experience"
+        description="An overview of my work experience"
+      />
+
       <section className='relative z-10 col-start-2 sm:mb-8'>
 
         <div className='flex flex-col h-72 justify-center items-start sm:items-center'>
