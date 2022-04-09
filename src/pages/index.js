@@ -228,13 +228,13 @@ const IndexPage = () => {
         </div>
         
         <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
-          Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
-          From this experience i've learned to be flexible pictureand solved many challenges with creativity and dedication.<br /><br />
+          Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
+          From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
           I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
 
         <div className='hidden lg:flex justify-center gap-16 my-[5%] items-center'>
-          <StaticImage src='../images/placeholder.png' alt="Me" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
+          <StaticImage src='../images/placeholder.jpg' alt="Me" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
           
           <div>
             <h2 className='mb-5 md:mb-8'>
@@ -242,7 +242,7 @@ const IndexPage = () => {
             </h2>
 
             <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
-              Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's degree in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
+              Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
               From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
               I'm currently focused on expanding my skills as developer and progress a career in tech.   
             </p>
@@ -260,7 +260,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Please do not hesisate to contact me if you would like to work or hire me for any project.</p>
+          <p className="max-w-screen-sm mb-13">Please do not hesi1tate to contact me if you would like to work or hire me for any project.</p>
 
           <a
             href="mailto:lc.spn@mailfence.com"

@@ -1,11 +1,17 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => {
   return (
 
     <main className='grid justify-items-center items-center h-screen bg-dark-gray'>
-      
+
+      <Seo 
+        title="404: Not Found"
+        description=''
+      />
+
       <div className='flex flex-col p-4'>
 
         <div className='flex items-center'>
