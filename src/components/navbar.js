@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from "gatsby"
+import { resume } from '../resume/lucaspinosi.pdf'
 
 const Navbar = ({anchorLinks}) => {
   
@@ -65,13 +66,13 @@ const Navbar = ({anchorLinks}) => {
 
           </ul>
 
-          <Link
-            to="/"
+          <a
+            href={resume}
           >
             <button className="ml-3 px-5">
               Resume
             </button>
-          </Link>
+          </a>
 
         </div>
 
