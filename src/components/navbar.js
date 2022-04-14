@@ -1,9 +1,20 @@
 import * as React from 'react'
-import { Link } from "gatsby"
-import { resume } from '../resume/lucaspinosi.pdf'
+import { Link, useStaticQuery, graphql } from "gatsby"
+
 
 const Navbar = ({anchorLinks}) => {
   
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: {extension: {eq: "pdf"}}) {
+        nodes {
+          name
+          publicURL
+        }
+      }
+    }
+  `)
+
   return (
     <header className="transition-padding duration-300 ease py-4 md:py-6">
       <div className="flex items-center justify-between">
@@ -67,7 +78,9 @@ const Navbar = ({anchorLinks}) => {
           </ul>
 
           <a
-            href={resume}
+            href={data.allFile.nodes[0].publicURL}
+            target="_blank"
+            rel='noreferrer'
           >
             <button className="ml-3 px-5">
               Resume

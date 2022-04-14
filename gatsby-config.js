@@ -35,6 +35,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/static/`,
+        name: `static`,
+      },
+    },
+    {
       resolve: `gatsby-source-github-api`,
       options: {
         token: process.env.TOKEN,
