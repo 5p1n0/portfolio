@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import Seo from '../components/seo'
+import SEO from '../components/SEO'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ArrowLeft } from 'react-feather'
@@ -37,7 +37,7 @@ const ExperiencesPage = () => {
   return (
     <Layout isIndex={false} gridLayout='grid-cols-[16px_1fr_16px] md:grid-cols-[minmax(16px,0.1fr)_minmax(375px,1fr)_minmax(16px,0.1fr)]'>
 
-      <Seo
+      <SEO
         title="Work Experience"
         description="An overview of my work experience"
       />
