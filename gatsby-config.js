@@ -6,8 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "Luca Spinosi - Software Developer",
     author: "Luca Spinosi",
-    description: "Hi, i'm a full-stack developer with a background of 2+ years of experience working for startups.",
-    siteUrl: "https://spino.dev",
+    description: "Personal website of Luca Spinosi. Software developer from Italy",
   },
   plugins: [
     "gatsby-plugin-image",

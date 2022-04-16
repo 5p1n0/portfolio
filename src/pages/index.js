@@ -43,7 +43,7 @@ const IndexPage = () => {
 
       <SEO
         title="Homepage"   
-        description="Luca Spinosi &mdash; Software Developer based in Bologna, Emilia-Romagna"
+        description="Personal website of Luca Spinosi &mdash; Software developer from Italy"
       />
 
       <div className="col-span-full mb-[5%]"></div>

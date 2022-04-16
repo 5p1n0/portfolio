@@ -13,7 +13,6 @@ const SEO = ({ title, description, lang, meta }) => {
             title
             author
             description
-            siteUrl
           }
         }
       }
@@ -32,35 +31,23 @@ const SEO = ({ title, description, lang, meta }) => {
       titleTemplate={`%s | ${metaTitleTemplate}`}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
+          name: `referrer`,
+          content: `origin`,
         },
         {
           property: `og:type`,
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
+          property: `og:url`,
+          content: `https://spino.dev`
+        }
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          name: `twitter:title`,
+          property: `og:title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          property: `og:description`,
           content: metaDescription,
         },
       ].concat(meta)}
@@ -74,10 +61,10 @@ SEO.defaultProps = {
   description: ``,
 }
 SEO.propTypes = {
+  title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO
