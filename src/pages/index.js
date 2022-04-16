@@ -4,7 +4,7 @@ import { Circle, GitHub, Code } from 'react-feather'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const IndexPage = () => {
 
@@ -41,7 +41,7 @@ const IndexPage = () => {
   return (
     <Layout isIndex={true} gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
 
-      <SEO
+      <Seo
         title="Homepage"   
         description="Personal website of Luca Spinosi &mdash; Software developer from Italy"
       />

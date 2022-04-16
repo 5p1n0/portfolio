@@ -1,5 +1,5 @@
 import * as React from 'react'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => {
@@ -7,7 +7,7 @@ const NotFoundPage = () => {
 
     <main className='grid justify-items-center items-center h-screen bg-dark-gray'>
 
-      <SEO 
+      <Seo 
         title="404: Not Found"
         description=''
       />
