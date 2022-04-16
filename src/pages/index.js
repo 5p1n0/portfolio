@@ -4,7 +4,7 @@ import { Circle, GitHub, Code } from 'react-feather'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 
 const IndexPage = () => {
 
