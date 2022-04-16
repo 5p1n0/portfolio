@@ -48,6 +48,10 @@ const Seo = ({ title, description, lang, meta }) => {
           content: `website`,
         },
         {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata?.author || ``,
         },

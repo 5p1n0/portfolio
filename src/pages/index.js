@@ -263,7 +263,7 @@ const IndexPage = () => {
           <p className="max-w-screen-sm mb-13">Please do not hesitate to contact me if you would like to work or hire me for any project.</p>
 
           <a
-            href="mailto:lc.spn@mailfence.com"
+            href="mailto:luca.s@mailfence.com"
           >
             <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
               Let's Talk
@@ -273,9 +273,9 @@ const IndexPage = () => {
           <p className="mb-6">Bologna - Italy</p>
 
           <a
-            href="mailto:lc.spn@mailfence.com"
+            href="mailto:luca.s@mailfence.com"
           >
-            <p className="mb-20 underline text-vivid-orange">lc.spn@mailfence.com</p>
+            <p className="mb-20 underline text-vivid-orange">luca.s@mailfence.com</p>
           </a>
 
         </div>
