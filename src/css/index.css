@@ -81,7 +81,7 @@ p {
   }
 
   .tech {
-  @apply inline-block relative z-0 before:absolute before:left-0 before:top-0 before:w-full before:opacity-90 before:h-full before:-z-10 before:transition-transform before:scale-100 before:-rotate-[4deg] hover:before:rotate-[4deg] hover:before:scale-105
+  @apply inline-block cursor-default relative z-0 before:absolute before:left-0 before:top-0 before:w-full before:opacity-90 before:h-full before:-z-10 before:transition-transform before:scale-100 before:-rotate-[4deg] hover:before:rotate-[4deg] hover:before:scale-105
   }
 }
 

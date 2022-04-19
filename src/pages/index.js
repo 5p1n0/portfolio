@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { Circle, GitHub, Code } from 'react-feather'
+import { Circle, GitHub, Code, Linkedin } from 'react-feather'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
@@ -234,7 +234,7 @@ const IndexPage = () => {
         </p>
 
         <div className='hidden lg:flex justify-center gap-16 my-[5%] items-center'>
-          <StaticImage src='../images/placeholder.jpg' alt="Me" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
+          <StaticImage src='../images/photo.jpg' alt="Me" layout='constrained' width={296} aspectRatio={1} placeholder='tracedSVG' formats={ ["auto", "avif", "webp"] }  style={{ clipPath: 'circle(50%)'}}  className="hidden sm:block" />
           
           <div>
             <h2 className='mb-5 md:mb-8'>
@@ -264,11 +264,32 @@ const IndexPage = () => {
 
           <a
             href="mailto:luca.s@mailfence.com"
+            className='mb-16 md:mb-22'
           >
-            <button className="mb-20 md:mb-28 xs:px-6 xs:py-4">
+            <button className="xs:px-6 xs:py-4">
               Let's Talk
             </button>
           </a>
+
+          <div className='flex gap-12 mb-8 md:mb-10'>
+
+            <a
+              href="https://github.com/5p1n0"
+              target="_blank"
+              rel='noreferrer'
+            >
+              <GitHub className='text-light-gray hover:text-vivid-orange transform transition-colors duration-200 ease-in-out' size={24}/>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/lucaspinosi"
+              target="_blank"
+              rel='noreferrer'
+            >
+              <Linkedin className='text-light-gray hover:text-vivid-orange transform transition-colors duration-200 ease-in-out' size={24}/>
+            </a>
+
+          </div>
 
           <p className="mb-6">Bologna - Italy</p>
 
