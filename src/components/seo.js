@@ -5,22 +5,29 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ title, description, lang, meta }) => {
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            author
-            description
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          author
+          description
+        }
+      }
+      
+      allFile(filter: {name: {eq: "seo"}}) {
+        edges {
+          node {
+            publicURL
           }
         }
       }
-    `
-  )
+    }
+  `)
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaTitleTemplate = site.siteMetadata.title || ''
+  const metaDescription = description || data.site.siteMetadata.description
+  const metaTitleTemplate = data.site.siteMetadata.title || ''
+  const image = data.allFile.edges[0].node.publicURL || '';
 
   return (
     <Helmet
@@ -33,6 +40,10 @@ const Seo = ({ title, description, lang, meta }) => {
         {
           name: `referrer`,
           content: `origin`,
+        },
+        {
+          name: 'description',
+          content: metaDescription,
         },
         {
           property: `og:type`,
@@ -50,6 +61,10 @@ const Seo = ({ title, description, lang, meta }) => {
           property: `og:description`,
           content: metaDescription,
         },
+        {
+          propety: `og:image`,
+          content: image,
+        }
       ].concat(meta)}
     />
   )

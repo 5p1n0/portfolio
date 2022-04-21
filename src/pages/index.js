@@ -182,18 +182,18 @@ const IndexPage = () => {
 
         <div className="flex gap-4 ml-6 sm:ml-[11.2%] group transform transition duration-200 ease-in-out hover:scale-105 cursor-pointer sm:mb-10">
 
-          <GitHub 
-            className="group-hover:stroke-vivid-orange stroke-light-gray bg-dark-gray self-center relative z-20"
-            size={16}
-          />
-
           <a
-            className='text-sm group-hover:text-vivid-orange text-light-gray'
+            className='group-hover:text-vivid-orange text-light-gray flex gap-3'
             href="https://github.com/5p1n0" 
             target="_blank"
             rel='noreferrer'
           >
-            Check my GitHub profile!
+            <title>GitHub</title>
+            <GitHub 
+              className="self-center relative z-20"
+              size={16}
+            />
+            <span className='text-sm'>Check my GitHub profile!</span>
           </a>
 
         </div>
@@ -277,6 +277,7 @@ const IndexPage = () => {
               href="https://github.com/5p1n0"
               target="_blank"
               rel='noreferrer'
+              aria-label='GitHub'
             >
               <GitHub className='text-light-gray hover:text-vivid-orange transform transition-colors duration-200 ease-in-out' size={24}/>
             </a>
@@ -285,6 +286,7 @@ const IndexPage = () => {
               href="https://linkedin.com/in/lucaspinosi"
               target="_blank"
               rel='noreferrer'
+              aria-label='linkedIn'
             >
               <Linkedin className='text-light-gray hover:text-vivid-orange transform transition-colors duration-200 ease-in-out' size={24}/>
             </a>
