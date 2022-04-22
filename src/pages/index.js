@@ -43,7 +43,6 @@ const IndexPage = () => {
 
       <Seo
         title="Homepage"   
-        description="Personal website of Luca Spinosi &mdash; Software developer from Italy"
       />
 
       <div className="col-span-full mb-[5%]"></div>

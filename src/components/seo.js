@@ -55,7 +55,7 @@ const Seo = ({ title, description, lang, meta }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${title} | ${metaTitleTemplate}`,
         },
         {
           property: `og:description`,

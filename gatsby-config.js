@@ -8,7 +8,6 @@ module.exports = {
     author: "Luca Spinosi",
     description: "Personal website of Luca Spinosi &mdash; Software developer from Italy",
     url: "https://spino.dev",
-    image: "/seo.png",
   },
   plugins: [
     "gatsby-plugin-image",

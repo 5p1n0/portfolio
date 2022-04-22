@@ -39,7 +39,7 @@ const ExperiencesPage = () => {
 
       <Seo
         title="Work Experience"
-        description="An overview of my work experience"
+        description="Overview of my work experience"
       />
 
       <section className='relative z-10 col-start-2 sm:mb-8'>
