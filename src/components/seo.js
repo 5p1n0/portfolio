@@ -19,7 +19,13 @@ const Seo = ({ title, description, lang, meta }) => {
       allFile(filter: {name: {eq: "meta-image"}}) {
         edges {
           node {
-            publicURL
+            childImageSharp {
+              resize(width: 1200) {
+                src
+                height
+                width
+              }
+            }
           }
         }
       }
@@ -28,7 +34,8 @@ const Seo = ({ title, description, lang, meta }) => {
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const image = `${data.site.siteMetadata.url}${data.allFile.edges[0].node.publicURL}` || ''
+  const metaImage = data.allFile.edges[0].node.childImageSharp.resize || ''
+  const metaImageSrc = `${data.site.siteMetadata.url}${metaImage.src}` || ''
 
   return (
     <Helmet
@@ -52,15 +59,22 @@ const Seo = ({ title, description, lang, meta }) => {
           content: `website`,
         },
         {
-          name: `image`,
-          propety: `og:image`,
-          content: image,
-        },
-        {
           name: 'description',
           property: `og:description`,
           content: metaDescription,
-        }
+        },
+        {
+          propety: `og:image`,
+          content: metaImageSrc,
+        },
+        {
+          propety: `og:image:width`,
+          content: metaImageSrc.width,
+        },
+        {
+          propety: `og:image:height`,
+          content: metaImageSrc.height,
+        },
       ].concat(meta)}
     />
   )
