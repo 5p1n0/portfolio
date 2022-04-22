@@ -45,7 +45,6 @@ const Seo = ({ title, description, lang, meta }) => {
           content: `website`,
         },
         {
-          name: `image`,
           propety: `og:image`,
           content: `https://u.cubeupload.com/Tauro/RGyEEH.jpg`,
         },
