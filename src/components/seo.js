@@ -27,7 +27,7 @@ const Seo = ({ title, description, lang, meta }) => {
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const image = data.allFile.edges[0].node.publicURL || '';
+  const image = data.allFile.edges[0].node.publicURL || ''
 
   return (
     <Helmet
@@ -38,32 +38,27 @@ const Seo = ({ title, description, lang, meta }) => {
       titleTemplate={`%s | ${metaTitleTemplate}`}
       meta={[
         {
-          name: `referrer`,
-          content: `origin`,
+          property: `og:url`,
+          content: `https://spino.dev`,
         },
         {
-          name: 'description',
-          content: metaDescription,
+          name: `title`,
+          property: `og:title`,
+          content: `${title} | ${metaTitleTemplate}`,
         },
         {
           property: `og:type`,
           content: `website`,
         },
         {
-          property: `og:url`,
-          content: `https://spino.dev`,
-        },
-        {
-          property: `og:title`,
-          content: `${title} | ${metaTitleTemplate}`,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
+          name: `image`,
           propety: `og:image`,
           content: image,
+        },
+        {
+          name: 'description',
+          property: `og:description`,
+          content: metaDescription,
         }
       ].concat(meta)}
     />
