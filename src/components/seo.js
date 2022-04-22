@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ title, description, lang, meta }) => {
+const Seo = ({ title, description, lang, meta, image }) => {
 
   const data = useStaticQuery(graphql`
     {
@@ -15,27 +15,14 @@ const Seo = ({ title, description, lang, meta }) => {
           url
         }
       }
-      
-      allFile(filter: {name: {eq: "meta-image"}}) {
-        edges {
-          node {
-            childImageSharp {
-              resize(width: 1200) {
-                src
-                height
-                width
-              }
-            }
-          }
-        }
-      }
     }
   `)
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const metaImage = data.allFile.edges[0].node.childImageSharp.resize || ''
+  const metaImage = image || ''
   const metaImageSrc = `${data.site.siteMetadata.url}${metaImage.src}` || ''
+  console.log(metaImage);
 
   return (
     <Helmet
@@ -89,6 +76,11 @@ Seo.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    height: PropTypes.number,
+    width: PropTypes.number,
+  }),
   meta: PropTypes.arrayOf(PropTypes.object),
 }
 
