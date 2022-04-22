@@ -53,7 +53,7 @@ const ExperiencesPage = () => {
           </svg>
 
           <p className="text-left sm:text-center text-white max-w-3xl">
-            We created a startup to develop a social network service to innovate how role-turn based games are played on mobile platforms.
+            We founded a startup to innovate how role-turn based games are played on mobile platforms, with dedicated tools and services, for players and game masters.
           </p>
 
         </div>

@@ -7,10 +7,13 @@ module.exports = {
     title: "Luca Spinosi - Software Developer",
     author: "Luca Spinosi",
     description: "Personal website of Luca Spinosi &mdash; Software developer from Italy",
+    url: "https://spino.dev",
+    image: "/seo.png",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     {
