@@ -12,7 +12,15 @@ const Seo = ({ title, description, lang, meta }) => {
           title
           author
           description
-          image
+          url
+        }
+      }
+      
+      allFile(filter: {name: {eq: "meta-image"}}) {
+        edges {
+          node {
+            publicURL
+          }
         }
       }
     }
@@ -20,8 +28,7 @@ const Seo = ({ title, description, lang, meta }) => {
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const image = data.site.siteMetadata.image || ''
-  
+  const image = `${data.site.siteMetadata.url}${data.allFile.edges[0].node.publicURL}` || ''
 
   return (
     <Helmet
@@ -45,8 +52,9 @@ const Seo = ({ title, description, lang, meta }) => {
           content: `website`,
         },
         {
+          name: `image`,
           propety: `og:image`,
-          content: `https://u.cubeupload.com/Tauro/RGyEEH.jpg`,
+          content: image,
         },
         {
           name: 'description',
