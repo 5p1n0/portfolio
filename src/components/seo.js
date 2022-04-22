@@ -15,7 +15,7 @@ const Seo = ({ title, description, lang, meta }) => {
         }
       }
       
-      allFile(filter: {name: {eq: "seo"}}) {
+      allFile(filter: {name: {eq: "meta-image"}}) {
         edges {
           node {
             publicURL
