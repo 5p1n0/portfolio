@@ -7,6 +7,7 @@ module.exports = {
     title: "Luca Spinosi - Software Developer",
     author: "Luca Spinosi",
     description: "Personal website of Luca Spinosi &mdash; Software developer from Italy",
+    image: "https://u.cubeupload.com/Tauro/RGyEEH.jpg",
     url: "https://spino.dev",
   },
   plugins: [

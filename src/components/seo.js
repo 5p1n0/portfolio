@@ -12,14 +12,7 @@ const Seo = ({ title, description, lang, meta }) => {
           title
           author
           description
-        }
-      }
-      
-      allFile(filter: {name: {eq: "meta-image"}}) {
-        edges {
-          node {
-            publicURL
-          }
+          image
         }
       }
     }
@@ -27,7 +20,8 @@ const Seo = ({ title, description, lang, meta }) => {
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const image = data.allFile.edges[0].node.publicURL || ''
+  const image = data.site.siteMetadata.image || ''
+  
 
   return (
     <Helmet
