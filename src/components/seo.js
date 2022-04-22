@@ -22,7 +22,6 @@ const Seo = ({ title, description, lang, meta, image }) => {
   const metaTitleTemplate = data.site.siteMetadata.title || ''
   const metaImage = image || ''
   const metaImageSrc = `${data.site.siteMetadata.url}${metaImage.src}` || ''
-  console.log(metaImage);
 
   return (
     <Helmet
@@ -56,11 +55,11 @@ const Seo = ({ title, description, lang, meta, image }) => {
         },
         {
           propety: `og:image:width`,
-          content: metaImageSrc.width,
+          content: metaImage.width,
         },
         {
           propety: `og:image:height`,
-          content: metaImageSrc.height,
+          content: metaImage.height,
         },
       ].concat(meta)}
     />
