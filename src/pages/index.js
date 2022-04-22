@@ -102,7 +102,7 @@ const IndexPage = () => {
           </button>
         </Link>
 
-        <div id="experiences" className="invisible"></div>
+        <div id="experience" className="invisible"></div>
       </section>
 
       <div className="col-start-1 relative trunk"></div>
@@ -118,7 +118,7 @@ const IndexPage = () => {
           />
 
           <h2>
-            My experiences
+            My experience
           </h2>
 
         </div>
@@ -128,7 +128,7 @@ const IndexPage = () => {
         </p>
 
         <Link 
-          to="/experiences"
+          to="/experience"
         >
           <div className='box w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72 relative group overflow-hidden'>
             <StaticImage src="../images/logo.jpg" alt="RoleEver logo" formats={["auto", "avif", "webp"]} layout='fullWidth' placeholder='tracedSVG' className="transition duration-500 ease-in-out group-hover:scale-110 box bg-dark-gray-light w-72 h-36 sm:w-[34rem] sm:h-60 xl:w-full xl:h-72" />

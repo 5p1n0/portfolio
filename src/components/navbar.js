@@ -40,9 +40,9 @@ const Navbar = ({anchorLinks}) => {
             <li key={4} className="inline ml-2 px-4">
               <Link
                 className="nav-link ghost-underline "
-                to="#experiences"
+                to="#experience"
               >
-                Experiences
+                Experience
               </Link>
             </li>
             

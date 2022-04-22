@@ -53,7 +53,7 @@ const ExperiencesPage = () => {
           </svg>
 
           <p className="text-left sm:text-center text-white max-w-3xl">
-            We founded a startup to innovate how role-turn based games are played on mobile platforms, with dedicated tools and services, for players and game masters.
+            A startup that brought innovation on how role-turn based games are played on mobile platforms, with dedicated tools and services, for players and game masters.
           </p>
 
         </div>
@@ -228,7 +228,7 @@ const ExperiencesPage = () => {
 
       <div className='col-start-2 justify-self-center'>
         <Link
-          to="/#experiences"
+          to="/#experience"
         >
           <button className="flex gap-3 items-center xs:px-6 xs:py-4 mb-12">
               <ArrowLeft className='inline-block relative animate-bounce-left' size={24} /> Back
