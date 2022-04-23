@@ -35,30 +35,15 @@ const IndexPage = () => {
         }
       }
       
-      allFile(filter: {name: {eq: "meta-image"}}) {
-        edges {
-          node {
-            childImageSharp {
-              resize(width: 1200) {
-                src
-                height
-                width
-              }
-            }
-          }
-        }
-      }
+
     }
   `);
-
-  const image = data.allFile.edges[0].node.childImageSharp.resize;
 
   return (
     <Layout isIndex={true} gridLayout='grid-cols-[16px_1fr] md:grid-cols-[minmax(16px,0.2fr)_minmax(375px,1fr)] xl:grid-cols-[minmax(16px,0.5fr)_minmax(375px,1fr)_0.5fr]'>
 
       <Seo
         title="Homepage"
-        image={image}   
       />
 
       <div className="col-span-full mb-[5%]"></div>

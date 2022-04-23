@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ title, description, lang, meta, image }) => {
+const Seo = ({ title, description, lang, meta }) => {
 
   const data = useStaticQuery(graphql`
     {
@@ -15,13 +15,26 @@ const Seo = ({ title, description, lang, meta, image }) => {
           url
         }
       }
+
+      allFile(filter: {name: {eq: "logo"}}) {
+        edges {
+          node {
+            childImageSharp {
+              resize(width: 1200) {
+                src
+                height
+                width
+              }
+            }
+          }
+        }
+      }
     }
   `)
 
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
-  const metaImage = image || ''
-  const metaImageSrc = `${data.site.siteMetadata.url}${metaImage.src}` || ''
+  const metaImage = data.allFile.edges[0].node.childImageSharp.resize || ''
 
   return (
     <Helmet
@@ -32,37 +45,30 @@ const Seo = ({ title, description, lang, meta, image }) => {
       titleTemplate={`%s | ${metaTitleTemplate}`}
       meta={[
         {
-          property: `og:url`,
-          content: `https://spino.dev`,
+          property: `description`,
+          content: metaDescription,
         },
         {
-          name: `title`,
-          property: `og:title`,
-          content: `${title} | ${metaTitleTemplate}`,
+          property: `og:url`,
+          content: `https://spino.dev`,
         },
         {
           property: `og:type`,
           content: `website`,
         },
         {
-          name: 'description',
+          property: `og:title`,
+          content: `${title} | ${metaTitleTemplate}`,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
-        {
-          propety: `og:image`,
-          content: metaImageSrc,
-        },
-        {
-          propety: `og:image:width`,
-          content: metaImage.width,
-        },
-        {
-          propety: `og:image:height`,
-          content: metaImage.height,
-        },
       ].concat(meta)}
-    />
+    >
+      <meta property="image" content={`${data.site.siteMetadata.url}${metaImage.src}`} />
+      <meta property="og:image" content={`${data.site.siteMetadata.url}${metaImage.src}`} />
+    </Helmet>
   )
 }
 
@@ -75,11 +81,6 @@ Seo.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
-  image: PropTypes.shape({
-    src: PropTypes.string,
-    height: PropTypes.number,
-    width: PropTypes.number,
-  }),
   meta: PropTypes.arrayOf(PropTypes.object),
 }
 
