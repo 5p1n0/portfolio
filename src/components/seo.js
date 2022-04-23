@@ -16,7 +16,7 @@ const Seo = ({ title, description, lang}) => {
         }
       }
 
-      allFile(filter: {name: {eq: "logo"}}) {
+      allFile(filter: {name: {eq: "meta-image"}}) {
         edges {
           node {
             childImageSharp {
