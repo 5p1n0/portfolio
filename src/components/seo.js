@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ title, description, lang, meta }) => {
+const Seo = ({ title, description, lang}) => {
 
   const data = useStaticQuery(graphql`
     {
@@ -35,6 +35,7 @@ const Seo = ({ title, description, lang, meta }) => {
   const metaDescription = description || data.site.siteMetadata.description
   const metaTitleTemplate = data.site.siteMetadata.title || ''
   const metaImage = data.allFile.edges[0].node.childImageSharp.resize || ''
+  const metaUrl = data.site.siteMetadata.url || ''
 
   return (
     <Helmet
@@ -43,30 +44,13 @@ const Seo = ({ title, description, lang, meta }) => {
       }}
       title={title}
       titleTemplate={`%s | ${metaTitleTemplate}`}
-      meta={[
-        {
-          property: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:url`,
-          content: `https://spino.dev`,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:title`,
-          content: `${title} | ${metaTitleTemplate}`,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
     >
+      <meta property="description" content={metaDescription} />
       <meta property="image" content={`${data.site.siteMetadata.url}${metaImage.src}`} />
+      <meta property="og:url" content={metaUrl} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={`${title} | ${metaTitleTemplate}`} />
+      <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={`${data.site.siteMetadata.url}${metaImage.src}`} />
     </Helmet>
   )
@@ -81,7 +65,6 @@ Seo.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default Seo
