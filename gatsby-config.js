@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Luca Spinosi - Software Developer",
+    title: "Luca Spinosi - Front End Developer",
     author: "Luca Spinosi",
-    description: "Personal website of Luca Spinosi &mdash; Software developer from Italy",
+    description: "Personal website of Luca Spinosi &mdash; Front End developer from Italy",
     url: "https://spino.dev",
   },
   plugins: [
