@@ -45,7 +45,7 @@ const Seo = ({ title, description, lang}) => {
       title={title}
       titleTemplate={`%s | ${metaTitleTemplate}`}
     >
-      <meta property="description" content={metaDescription} />
+      <meta name="description" property="description" content={metaDescription} />
       <meta property="image" content={`${data.site.siteMetadata.url}${metaImage.src}`} />
       <meta property="og:url" content={metaUrl} />
       <meta property="og:type" content="website" />
