@@ -1,6 +1,6 @@
 My [personal website] built with Gatsby framework and Tailwind CSS.
 
-Here is the [design prototype] 
+Here is my [design prototype] 
 
 ## Tech
 - [Gatsby]
