@@ -71,8 +71,8 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Foundation</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              I was in charge to create features for end users and my work was spanning between back and front-end tasks.<br/><br/>
-              A core server-side feature that I've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users within the app.
+              I was responsible for building features for end users and my work spanned between back and front-end tasks.<br/><br/>
+              A major server-side feature that I've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users in the app.
             </p>
 
           </div>
@@ -89,7 +89,7 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Maturity</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              Once we made the core services, my work shifted on the in-app shop and user's shared content, ultimately improving the user experience.<br /><br /> This was the fundamental part of the application.
+              Once we made the core services, my work moved to the in-app shop and the user's shared content, ultimately improving the user experience.<br /><br /> This was the fundamental part of the application.
             </p>
 
           </div>
@@ -223,7 +223,7 @@ const ExperiencesPage = () => {
       <StaticImage src="../images/hero-2.jpg" alt="screens" layout='fullWidth' formats={["auto", "avif", "webp"]} placeholder='tracedSVG' className="col-span-full mb-12 md:mb-32" />
 
       <section className='col-start-2 justify-self-center mb-12 md:mb-20'>
-        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to be a team player, work with Scrum methodology, contribute for a large-scale project and at last, improved my developer full stack skills."</p>
+        <p className='text-center font-heading italic font-semibold text-lg md:text-2xl lg:text-3xl lg:leading-relaxed max-w-4xl'>"At the end of my journey with RoleEver, I learned how to be a team player, to work with Scrum methodology, to contribute for a large-scale project and lastly, improved my developer full stack skills."</p>
       </section>
 
       <div className='col-start-2 justify-self-center'>

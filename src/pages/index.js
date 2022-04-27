@@ -73,7 +73,7 @@ const IndexPage = () => {
         <div className="relative overflow-hidden 2xl:overflow-visible">
 
           <p className="md:mb-20 md:max-w-lg">
-            I have the passion for technology and web development, with a full stack background of 2+ years of experience working for startups.
+            I am passionate about technology and web development, with a full stack background of more than 2 years of work experience for startups.
           </p>
 
           <svg className="cover" width="598" height="241" viewBox="0 0 598 241" xmlns="http://www.w3.org/2000/svg">
@@ -119,13 +119,13 @@ const IndexPage = () => {
           />
 
           <h2>
-            My experience
+            My work experience
           </h2>
 
         </div>
 
         <p className="xs:mb-10 md:mb-14 md:max-w-lg">
-          Find out more about my prior work experience
+          Learn more about my previous work history
         </p>
 
         <Link 
@@ -228,8 +228,8 @@ const IndexPage = () => {
         </div>
         
         <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
-          Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
-          From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
+          Hi, I'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where I've obtained a deeper knowledge in many domains.<br /><br />
+          From this experience I've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
           I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
 
@@ -242,9 +242,9 @@ const IndexPage = () => {
             </h2>
 
             <p className="md:mb-8 md:max-w-xs lg:max-w-sm">
-              Hi, i'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where i've obtained a deeper knowledge in many domains.<br /><br />
-              From this experience i've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
-              I'm currently focused on expanding my skills as developer and progress a career in tech.   
+              Hi, I'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the opportunity to work with a startup, where I gained in-depth knowledge in many fields.<br /><br />
+              Through this experience I have learned to be flexible and solved numerous challenges with creativity and dedication.<br /><br />
+              I am currently focusing on expanding my developer skills and advancing a career in tech.   
             </p>
           </div>
         </div>
@@ -260,7 +260,7 @@ const IndexPage = () => {
 
           <h3 className="mb-8 md:mb-14">Get in touch</h3>
 
-          <p className="max-w-screen-sm mb-13">Please do not hesitate to contact me if you would like to work or hire me for any project.</p>
+          <p className="max-w-screen-sm mb-13">Please feel free to contact me if you are interested in working or hiring me for any project.</p>
 
           <a
             href="mailto:luca.s@mailfence.com"
