@@ -6,7 +6,7 @@ const Navbar = ({anchorLinks}) => {
   
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {extension: {eq: "pdf"}}) {
+      allFile(filter: {extension: {eq: "pdf"}}, sort: {order: ASC, fields: name}) {
         nodes {
           name
           publicURL
