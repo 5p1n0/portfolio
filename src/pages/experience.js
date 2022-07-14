@@ -89,7 +89,7 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Maturity</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              Once we made the core services, my work moved to the in-app shop and the user's shared content, ultimately improving the user experience.<br /><br /> This was the fundamental part of the application.
+              Once we made the core services, my work moved to the in-app shop and the users' shared content, ultimately improving the user experience.<br /><br /> This was the fundamental part of the application.
             </p>
 
           </div>
