@@ -228,7 +228,7 @@ const IndexPage = () => {
         </div>
         
         <p className="lg:hidden md:mb-8 md:max-w-xs lg:max-w-sm">
-          Hi, I'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the oppurtunity to work with a startup, where I've obtained a deeper knowledge in many domains.<br /><br />
+          Hi, I'm Luca Spinosi, a software developer from Italy, currently pursuing a bachelor's in computer science. I had the opportunity to work with a startup, where I've obtained a deeper knowledge in many domains.<br /><br />
           From this experience I've learned to be flexible and solved many challenges with creativity and dedication.<br /><br />
           I'm currently focused on expanding my skills as developer and progress a career in tech.
         </p>
