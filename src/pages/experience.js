@@ -71,7 +71,7 @@ const ExperiencesPage = () => {
 
             <h3 className="mb-5 md:mb-8 text-vivid-orange text-left">Foundation</h3>
             <p className='mb-0 xs:mb-10 max-w-md text-left'>
-              I was responsible for building features for end users and my work spanned between backend and frontend related tasks.<br/><br/>
+              I was responsible for building features for end-users and my work spanned between back-end and front-end related tasks.<br/><br/>
               A major server-side feature that I've developed using <span className='tech before:bg-[#25c2a0]'>Socket.IO</span> and <span className='tech before:bg-[#d81b60]'>RxJS</span> libs, mainly concerning socket rooms, was the real time status of users in the app.
             </p>
 
